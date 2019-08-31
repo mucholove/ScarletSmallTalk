@@ -4,6 +4,11 @@ Scarlet SmallTalk is a Smalltalk to JavaScript cross-compiler and runtime.
 
 The Scarlet Compiler is a modified version of the current Squeak compiler and generates code that is strongly influenced by Amber.
 
+Help
+```
+  ./scarlet 
+```
+
 ## Build Scarlet Compiler
 
 Creates an image with the Scarlet Compiler. 
@@ -33,3 +38,11 @@ Produces artifacts/sk.kernel.js
 make test
 ```
 
+## Run the  example app
+
+Compile the SmallTalk example sources and build a Scarlet image then run the example in interactive mode
+```
+  ./scarlet build example
+  ./scarlet -i example/mobile.js
+  > MyApp main
+```
