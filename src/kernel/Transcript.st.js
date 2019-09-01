@@ -12,7 +12,8 @@ return self;
 , "io", unescape("show%3A%20aString%0D%09self%20nextPutAll%3A%20aString%20asString."));
 smalltalk.bind(smalltalk.Transcript.$klass, unescape("nextPutAll%3A"), "nextPutAll_", function Transcript_class__nextPutAll_(aCollection){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKTranscript.primNextPutAll(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
