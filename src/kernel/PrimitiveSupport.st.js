@@ -4,6 +4,9 @@ smalltalk.addClass("PrimitiveModule", smalltalk.Object, ['primFailValue'], 'Prim
 smalltalk.PrimitiveModule.$classVariableNames=("");
 smalltalk.addClass("PrimitiveFailed", smalltalk.Error, [], 'nil');
 smalltalk.PrimitiveFailed.$classVariableNames=("");
+
+/*PrimitiveModule comment: '	what is a primitive'*/
+smalltalk.PrimitiveModule.comment_(unescape("%0D%09what%20is%20a%20primitive"));
 smalltalk.bind(smalltalk.Object, unescape("primitiveFailed"), "primitiveFailed", function Object__primitiveFailed(){
 var stk = nil;
 const self = this; return smalltalk.PrimitiveFailed.signal_("Primitve failed");
@@ -15,7 +18,8 @@ const self = this; return smalltalk.PrimitiveFailed.signal_(aString);
 , "", unescape("primitiveFailed%3A%20aString%0D%09%0D%09%22%20enable%20this%20if%20you%20need%20the%20primitive%20failed%20stack%22%0D%09%22%0D%09%7B%27stk%20%3D%20%28new%20Error%28%29%29.stack%3B%0D%09console.log%28aString%29%3B%0D%09console.log%28stk%29%3B%0D%09%27%7D.%0D%09%22%0D%09%5EPrimitiveFailed%20signal%3A%20aString"));
 smalltalk.bind(smalltalk.RuntimePrimitiveManager.$klass, unescape("setPlatformName%3A"), "setPlatformName_", function RuntimePrimitiveManager_class__setPlatformName_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.RuntimePrimitiveManager.primSetPlatformName(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self;
 return self;
 }
@@ -27,28 +31,32 @@ return self;
 , "registration", unescape("registerModule%3A%20aPrimitiveModule%0D%0D%09self%0D%09%09registerModule%3A%20aPrimitiveModule%0D%09%09named%3A%20aPrimitiveModule%20moduleName%0D%09%09with%3A%20aPrimitiveModule%20primitiveMap"));
 smalltalk.bind(smalltalk.RuntimePrimitiveManager.$klass, unescape("newPrimitiveSpec"), "newPrimitiveSpec", function RuntimePrimitiveManager_class__newPrimitiveSpec(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.RuntimePrimitiveManager.primNewPrimitiveSpec(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self;
 return self;
 }
 , "registration", unescape("newPrimitiveSpec%0D%0D%09%3Cprimitive%3A%20%27primNewPrimitiveSpec%27%20module%3A%20%27RuntimePrimitiveManager%27%3E"));
 smalltalk.bind(smalltalk.RuntimePrimitiveManager.$klass, unescape("registerSpec%3Anamed%3A"), "registerSpec_named_", function RuntimePrimitiveManager_class__registerSpec_named_(aSpec,aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.RuntimePrimitiveManager.primRegisterSpec(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self;
 return self;
 }
 , "registration", unescape("registerSpec%3A%20aSpec%0Dnamed%3A%20aString%0D%0D%09%3Cprimitive%3A%20%27primRegisterSpec%27%20module%3A%20%27RuntimePrimitiveManager%27%3E"));
 smalltalk.bind(smalltalk.RuntimePrimitiveManager.$klass, unescape("registerModule%3Anamed%3Awith%3A"), "registerModule_named_with_", function RuntimePrimitiveManager_class__registerModule_named_with_(aPrimitiveModule,aString,aDictionary){
 var $$primitiveResult = smalltalk.primitiveManager.modules.RuntimePrimitiveManager.primRegisterSmalltalkModule(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self;
 return self;
 }
 , "registration", unescape("registerModule%3A%20aPrimitiveModule%0Dnamed%3A%20aString%0Dwith%3A%20aDictionary%0D%0D%09%3Cprimitive%3A%20%27primRegisterSmalltalkModule%27%20module%3A%20%27RuntimePrimitiveManager%27%3E"));
 smalltalk.bind(smalltalk.RuntimePrimitiveManager.$klass, unescape("deregisterModule%3A"), "deregisterModule_", function RuntimePrimitiveManager_class__deregisterModule_(aModule){
 var $$primitiveResult = smalltalk.primitiveManager.modules.RuntimePrimitiveManager.primDeregisterSmalltalkModule(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self;
 return self;
 }

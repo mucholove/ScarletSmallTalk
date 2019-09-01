@@ -9,3 +9,5 @@ Object
 main
 	" log 'Hello World' into the console/cmd "
 	Transcript show: 'Hello world' ! !
+
+MyApp main!

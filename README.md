@@ -4,32 +4,37 @@ Scarlet SmallTalk is a Smalltalk to JavaScript cross-compiler and runtime.
 
 The Scarlet Compiler is a modified version of the current Squeak compiler and generates code that is strongly influenced by Amber.
 
-Help
 ```
   ./scarlet 
+Usage: scarlet [options] [command] <files-to-load...>
+
+Options:
+  -m, --mobile         build for mobile
+  -i, --interactive    Interactive mode
+  -h, --help           output usage information
+
+Commands:
+  compile <source...>  Compile a file or a directory of files
+  build <source>       Compile files in a directory into an image
+
 ```
 
-## Build Scarlet Compiler
+## Build the runtime(s)
 
-Creates an image with the Scarlet Compiler. 
+Translates all .st files into JS using the Scarlet Compiler and assembles the Scarlet runtimes/images (kernel, prod, mobile)
 
-Build
 ```
-  make compiler
-```
-
-Produces artifacts/sk.compiler.js
-
-## Build Kernel with Scarlet Compiler
-
-Translates all .st files into JS using the Scarlet Compiler and assembles the sk.kernel.js Scarlet kernel image
-
-Build
-```
-make kernel
+make runtime
 ```
 
-Produces artifacts/sk.kernel.js
+Produces
+
+```
+ artifacts/sk.kernel.js
+ artifacts/sk.prod.js
+ artifacts/mobile.js
+
+```
 
 
 ## Run tests on the Scarlet Kernel
@@ -38,11 +43,30 @@ Produces artifacts/sk.kernel.js
 make test
 ```
 
-## Run the  example app
+## Build Scarlet Compiler
 
-Compile the SmallTalk example sources and build a Scarlet image then run the example in interactive mode
+If you want to rebuild the Scarlet Compiler itself use 
+
 ```
-  ./scarlet build example
-  ./scarlet -i example/mobile.js
-  > MyApp main
+  make compiler
 ```
+
+It compiles a new compiler image, installs it as the new compiler (folder bootstrap) and recompiles everything again.
+
+Produces 
+
+```
+  artifacts/sk.compiler.js
+```
+
+## Examples
+
+The folder examples includes a simple mobile and a standalone example.
+See the read me files in the example folders for details.
+
+## Configurations
+
+The build process is currently using Taskr (taskfile.js). A future goal is to bootstrap the build process in Smalltalk as well.
+
+The build parameters for the different artifacts are defined by configurations in the configs folder. Any additions to or removals of files from the build process need to modify the respective configuration file(s).
+

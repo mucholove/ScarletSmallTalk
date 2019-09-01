@@ -19,7 +19,42 @@ generateOn: generator! !
 StChunk class
 	instanceVariableNames: ''!
 
-!StChunk class methodsFor: 'instance creation' stamp: 'mir 8/23/2018 17:14'!
+!StChunk class methodsFor: 'private' stamp: 'mir 9/1/2019 10:44'!
+extractChunkReceiver: node
+	| receiver |
+	node isMessageNode
+		ifFalse: [
+			^node key = 'nil'
+				ifTrue: [nil]
+				ifFalse: [node key]].
+	"we are likely dealing with a metaclass reference"
+	receiver := node receiver key.
+	node selector key = 'class'
+		ifTrue: [^receiver metaClass]
+		ifFalse: [self error: 'no idea']! !
+
+
+!StChunk class methodsFor: 'instance creation' stamp: 'mir 9/1/2019 10:50'!
+from: aString messageNode: messageNode
+	| receiver selector args generator |
+	receiver := self extractChunkReceiver: messageNode receiver.
+	selector := messageNode selector key.
+	args := messageNode arguments collect: [:arg | arg key].
+	(selector beginsWith: 'methods')
+		ifTrue: [^StMethodsChunk receiver: receiver selector: selector arguments: args].
+	(selector beginsWith: 'subclass')
+		ifTrue: [^StSubclassChunk receiver: receiver selector: selector arguments: args].
+	(selector beginsWith: 'variableSubclass')
+		ifTrue: [^StSubclassChunk receiver: receiver selector: selector arguments: args].
+	(selector beginsWith: 'commentStamp')
+		ifTrue: [^StCommentChunk receiver: receiver selector: selector arguments: args].
+	(selector beginsWith: 'instanceVar')
+		ifTrue: [^StMetaClassChunk receiver: receiver selector: selector arguments: args].
+	generator := JSGenerator internal.
+	messageNode generateOn: generator.
+	^StDoItChunk source: aString javascript: generator source! !
+
+!StChunk class methodsFor: 'instance creation' stamp: 'mir 9/1/2019 10:40'!
 from: aString receiver: receiver selector: selector arguments: args
 	(selector beginsWith: 'methods')
 		ifTrue: [^StMethodsChunk receiver: receiver selector: selector arguments: args].
@@ -31,6 +66,7 @@ from: aString receiver: receiver selector: selector arguments: args
 		ifTrue: [^StCommentChunk receiver: receiver selector: selector arguments: args].
 	(selector beginsWith: 'instanceVar')
 		ifTrue: [^StMetaClassChunk receiver: receiver selector: selector arguments: args].
+	self halt.
 	^StDoItChunk source: aString! !
 
 !StChunk class methodsFor: 'instance creation' stamp: 'mir 6/8/2018 18:46'!
@@ -467,13 +503,21 @@ line: lineInt linePositition: positionInt
 
 
 StChunk subclass: #StDoItChunk
-	instanceVariableNames: 'source'
+	instanceVariableNames: 'js source'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Compiler-JS-Support'!
 
 
-!StDoItChunk methodsFor: 'as yet unclassified' stamp: 'mir 4/29/2018 13:57'!
+!StDoItChunk methodsFor: 'initialize-release' stamp: 'mir 9/1/2019 10:50'!
+generateOn: generator
+	generator generateDoIt: js source: source! !
+
+!StDoItChunk methodsFor: 'initialize-release' stamp: 'mir 9/1/2019 10:47'!
+javascript: jsSource
+	js := jsSource! !
+
+!StDoItChunk methodsFor: 'initialize-release' stamp: 'mir 4/29/2018 13:57'!
 source: sourceText
 	source := sourceText! !
 
@@ -482,10 +526,15 @@ source: sourceText
 StDoItChunk class
 	instanceVariableNames: ''!
 
-
-!StDoItChunk class methodsFor: 'as yet unclassified' stamp: 'mir 4/29/2018 13:56'!
+!StDoItChunk class methodsFor: 'instance creation' stamp: 'mir 4/29/2018 13:56'!
 source: sourceText
 	^self new source: sourceText! !
+
+!StDoItChunk class methodsFor: 'instance creation' stamp: 'mir 9/1/2019 10:47'!
+source: sourceText javascript: jsSource
+	^self new
+		source: sourceText;
+		javascript: jsSource! !
 
 
 Object subclass: #StEnvironment
@@ -948,16 +997,9 @@ onFileNamed: fileName environment: stEnvironment
 	^builder! !
 
 
-!StStreamCompiler class methodsFor: 'compiling' stamp: 'mir 4/10/2019 11:58'!
+!StStreamCompiler class methodsFor: 'compiling' stamp: 'mir 9/1/2019 10:29'!
 compile: sourceString in: stEnvironment
-	| compiler readStream writeStream |
-	readStream := sourceString readStream.
-	compiler := self on: readStream environment: stEnvironment.
-	compiler includeSource: true.
-	writeStream := '' writeStream.
-	compiler writeStream: writeStream.
-	compiler compile.
-	^writeStream contents! !
+	^self compile: sourceString in: stEnvironment includeSource: true! !
 
 !StStreamCompiler class methodsFor: 'compiling' stamp: 'mir 9/4/2018 16:48'!
 compile: sourceString in: stEnvironment includeSource: aBoolean

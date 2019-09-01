@@ -537,6 +537,20 @@ generate: subclass superclass: superClass instanceVariableNames: instVars classV
 	self eol.
 	self generate: subclass classVariableNames: classVars! !
 
+!JSGenerator methodsFor: 'generate' stamp: 'mir 9/1/2019 10:54'!
+generateDoIt: jsSource source: source
+	self eol.
+	stream
+		nextPutAll: '/*';
+		nextPutAll: source;
+		nextPutAll: '*/'.
+	self eol.
+	stream
+		nextPutAll: jsSource;
+		nextPut: $; .
+	self eol.
+! !
+
 !JSGenerator methodsFor: 'generate' stamp: 'mir 8/9/2018 09:10'!
 generateMeta: metaClassDefinition instanceVariableNames: instVarNames
 
@@ -1310,7 +1324,7 @@ evaluateCue: aCue ifFail: failBlock
 	^method! !
 
 
-!StCompiler methodsFor: 'chunk processing' stamp: 'mir 6/8/2018 18:24'!
+!StCompiler methodsFor: 'chunk processing' stamp: 'mir 9/1/2019 10:43'!
 analyze: messageNode chunk: aString
 	| args |
 	messageNode isVariableNode
@@ -1318,25 +1332,9 @@ analyze: messageNode chunk: aString
 	args := messageNode arguments collect: [:arg | arg key].
 	^StChunk
 		from: aString
-		receiver: (self extractChunkReceiver: messageNode receiver)
-		selector: messageNode selector key
-		arguments: args asArray! !
+		messageNode: messageNode! !
 
-!StCompiler methodsFor: 'chunk processing' stamp: 'mir 6/11/2018 22:32'!
-extractChunkReceiver: node
-	| receiver |
-	node isMessageNode
-		ifFalse: [
-			^node key = 'nil'
-				ifTrue: [nil]
-				ifFalse: [node key]].
-	"we are likely dealing with a metaclass reference"
-	receiver := node receiver key.
-	node selector key = 'class'
-		ifTrue: [^receiver metaClass]
-		ifFalse: [self error: 'no idea']! !
-
-!StCompiler methodsFor: 'chunk processing' stamp: 'mir 4/30/2018 18:27'!
+!StCompiler methodsFor: 'chunk processing' stamp: 'mir 9/1/2019 10:40'!
 parseChunk: aString in: stEnvironment ifFail: failBlock
 	"Compiles the sourceStream into a parse tree, then generates code into
 	 a method. "

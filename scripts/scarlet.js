@@ -14,6 +14,7 @@ cmdLine
 			filesToLoad = files;
 	});
 cmdLine
+	.option('-m, --mobile', 'build for mobile')
 	.option('-i, --interactive', 'Interactive mode');
 cmdLine
 	.command('compile <source...>')
@@ -31,7 +32,12 @@ cmdLine
 				console.log('build source needs to be directory!');
 				process.exit(-1);
 			}
-			build(source);
+			if(cmdLine.mobile) {
+				buildMobile(source);
+			} else {
+				buildStandalone(source);
+			}
+
 			process.exit(0);
 	});
 cmdLine
@@ -42,15 +48,15 @@ if (!process.argv.slice(2).length) {
 	process.exit(0);
 }
 for (file of filesToLoad) {
-	console.log(file);
+//	console.log(file);
  	eval(fs.readFileSync(file)+'');
 }
-
 if (cmdLine.interactive) {
 	runInteractive();
 } else {
 	console.log("don't understand:");
 	console.log(process.argv);
+	process.exit(-1);
 }
 
 process.exit(0);
@@ -84,13 +90,28 @@ function compileSource(source) {
 	}
 }
 
-function build(source) {
+function buildMobile(source) {
+	build(source, './artifacts/mobile.js');
+}
+
+function buildStandalone(source) {
+	build(source, './artifacts/sk.kernel.js');
+}
+
+function build(source, kernel) {
 	// console.log('build source: ' + source);
+	// console.log('build kernel: ' + kernel);
 	removeFiles(source + '/*.js');
-	var imagePath = source + '/mobile.js';
-	fs.copyFile('./artifacts/mobile.js', imagePath, (err) => {
+	var imageName = source.match(/([^\/]*)\/*$/)[1];
+	var imagePath = source;
+	if (source[source.length-1] == '/') {
+		imagePath += imageName + '.js';
+	} else {
+		imagePath += '/' + imageName + '.js';
+	}
+	fs.copyFile(kernel, imagePath, (err) => {
 		if (err) {
-			console.log('mobile.js not copied: ' + err.toString());
+			console.log(kernel + ' not copied: ' + err.toString());
 			throw err;
 		}
 	});
@@ -101,6 +122,7 @@ function build(source) {
 		fs.appendFileSync(imagePath, "\n");
 		fs.appendFileSync(imagePath, js);
 	}
+	console.log('Created "' + imagePath + '"');
 }
 
 function compileSourceFile(sourceFile) {
@@ -116,7 +138,7 @@ function compileSourceFile(sourceFile) {
 			process.exit(-1);
 		}
 		const includeSource = false;
-		console.log("compile:", sourceFile)
+//		console.log("compile:", sourceFile)
 		var source = fs.readFileSync(sourceFile, 'utf8');
 		var result = smalltalk.StStreamCompiler.compile_in_includeSource_(source, env, includeSource);
 		if (result.substr(0, 4) == "{st:") {

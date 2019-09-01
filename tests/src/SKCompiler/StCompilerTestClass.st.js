@@ -168,14 +168,16 @@ return self;
 , "method", unescape("unaryMethod%0D%09"));
 smalltalk.bind(smalltalk.StCompilerTestClass, unescape("primitiveWithFollowUpFailed"), "primitiveWithFollowUpFailed", function StCompilerTestClass__primitiveWithFollowUpFailed(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NKBarcodeScanner.primScan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primitiveWithFollowUpFailed%0D%09%3Cprimitive%3A%20%27primScan%27%20module%3A%20%27NKBarcodeScanner%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.StCompilerTestClass, unescape("primitiveWithFollowUpReturn"), "primitiveWithFollowUpReturn", function StCompilerTestClass__primitiveWithFollowUpReturn(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NKBarcodeScanner.primScan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return (42);
 }
 , "primitives", unescape("primitiveWithFollowUpReturn%0D%09%3Cprimitive%3A%20%27primScan%27%20module%3A%20%27NKBarcodeScanner%27%3E%0D%09%5E42"));
@@ -1343,3 +1345,6 @@ smalltalk.bind(smalltalk.StCompilerTestClass.$klass, unescape("new"), "$$new", f
 const self = this; return (smalltalk.superImplementor(smalltalk.StCompilerTestClass.$klass,'$$new').apply(self, [])).initialize();
 }
 , "instance creation", unescape("new%0D%09%5Esuper%20new%20initialize"));
+
+/*StCompilerTestClass initialize*/
+smalltalk.StCompilerTestClass.initialize();

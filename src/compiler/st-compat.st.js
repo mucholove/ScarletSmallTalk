@@ -82,7 +82,8 @@ return first.isLetter();
 , "testing", unescape("isBinary%0D%09%7C%20first%20%7C%0D%09first%20%3A%3D%20self%20at%3A%201.%0D%09%5E%28first%20%3D%3D%20%24_%20or%3A%20%5Bfirst%20isLetter%5D%29%20not"));
 smalltalk.bind(smalltalk.Number.$klass, unescape("primParseFrom%3A"), "primParseFrom_", function Number_class__primParseFrom_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primNumberFrom(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "parsing", unescape("primParseFrom%3A%20aString%0D%09%22%20Return%20the%20receiver%20as%20a%20Number.%20%22%0D%09%3Cprimitive%3A%20%27primNumberFrom%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed"));

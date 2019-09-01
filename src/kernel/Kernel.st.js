@@ -4,14 +4,16 @@ smalltalk.addClass("Error", smalltalk.Exception, [], 'Kernel');
 smalltalk.Error.$classVariableNames=("");
 smalltalk.bind(smalltalk.Object, unescape("smalltalk"), "smalltalk", function Object__smalltalk(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primSmalltalk(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "system", unescape("smalltalk%0D%20%09%22%20Return%20the%20smalltalk%20system%20containing%20the%20receiver.%20%22%0D%0D%20%09%3Cprimitive%3A%20%27primSmalltalk%27%20module%3A%20%27SKObject%27%3E%0D%20%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.Object, unescape("halt"), "halt", function Object__halt(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primHalt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -120,7 +122,8 @@ const self = this; return self.asString();
 , "converting", unescape("asJavascript%0D%09%22%20Return%20the%20javascript%20representation%20of%20the%20receiver.%0D%09The%20default%20implementation%20return%20the%20receiver%20as%20a%20String.%0D%09This%20method%20must%20be%20refined%20by%20subclasses%20implementing%20literal%20representation%20in%20javascript.%0D%09%22%0D%0D%09%5Eself%20asString"));
 smalltalk.bind(smalltalk.Object, unescape("asJSON"), "asJSON", function Object__asJSON(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primAsJSON(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asJSON%0D%09%22%20JSON%20-%20Return%20the%20JSON%20representation%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsJSON%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed"));
@@ -130,7 +133,8 @@ const self = this; return self.asJavascript();
 , "converting", unescape("escapedCode%0D%09%22%20Return%20the%20code%20to%20reproduce%20receiver%20from%20%28javascript%29%20code.%20%22%0D%0D%09%5Eself%20asJavascript"));
 smalltalk.bind(smalltalk.Object, unescape("basicPerform%3AwithArguments%3A"), "basicPerform_withArguments_", function Object__basicPerform_withArguments_(jsSelector,anArray){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primPerform(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "private", unescape("basicPerform%3A%20jsSelector%20withArguments%3A%20anArray%0D%09%22%20Private%20-%20Basic%20implementation%20of%20%23perform...%20%22%0D%09%3Cprimitive%3A%20%27primPerform%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed"));
@@ -149,19 +153,22 @@ return self.basicPerform_withArguments_((aSymbol.asSelector()),(aCollection.asAr
 , "perform", unescape("perform%3A%20aSymbol%20withArguments%3A%20aCollection%0D%09%22%20Return%20the%20result%20of%20sending%20message%20aSymbol%20to%20the%20receiver.%20%22%0D%0D%09aSymbol%20numberOfArguments%20%3D%20aCollection%20size%20ifFalse%3A%20%5B%0D%09%09%5Eself%20error%3A%20%27Invalid%20arguments%20size%27%0D%09%5D.%0D%09%5Eself%20basicPerform%3A%20aSymbol%20asSelector%20withArguments%3A%20aCollection%20asArray"));
 smalltalk.bind(smalltalk.Object, unescape("basicAt%3A"), "basicAt_", function Object__basicAt_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primBasicAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("basicAt%3A%20aString%0D%09%22%20Return%20the%20property%20of%20the%20receiver%20known%20as%20aString%20%28or%20nil%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBasicAt%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed"));
 smalltalk.bind(smalltalk.Object, unescape("basicAt%3AifAbsent%3A"), "basicAt_ifAbsent_", function Object__basicAt_ifAbsent_(aString,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primBasicAtIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("basicAt%3A%20aString%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20property%20of%20the%20receiver%20known%20as%20aString%20%28or%20the%20result%20of%20evaluating%20aBlock%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBasicAtIfAbsent%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed"));
 smalltalk.bind(smalltalk.Object, unescape("basicAt%3Aput%3A"), "basicAt_put_", function Object__basicAt_put_(aString,anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primBasicAtPut(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("basicAt%3A%20aString%20put%3A%20anObject%0D%09%22%20Set%20the%20property%20of%20the%20receiver%20known%20as%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBasicAtPut%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed"));
@@ -185,7 +192,8 @@ const self = this; return unescape("@property_");
 , "accessing", unescape("stPropertyPrefix%0D%09%22The%20prefix%20used%20to%20namespace%20Smalltalk%20properties.%22%0D%0D%09%5E%27@property_%27"));
 smalltalk.bind(smalltalk.Object, unescape("jsPropertyNames"), "jsPropertyNames", function Object__jsPropertyNames(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primJsPropertyNames(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("jsPropertyNames%0D%09%22Return%20the%20names%20of%20all%20of%20the%20javascript%20properties.%22%0D%0D%09%3Cprimitive%3A%27primJsPropertyNames%27%20module%3A%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -218,13 +226,15 @@ return nil;
 , "accessing", unescape("propertyAt%3A%20aString%0D%09%22Access%20a%20the%20specified%20property.%20Return%20nil%20if%20it%0D%09does%20not%20exist.%22%0D%0D%09%5Eself%20propertyAt%3A%20aString%20ifAbsent%3A%20%5Bnil%5D"));
 smalltalk.bind(smalltalk.Object, unescape("propertyAt%3AifAbsent%3A"), "propertyAt_ifAbsent_", function Object__propertyAt_ifAbsent_(aString,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primPropertyAtIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("propertyAt%3A%20aString%20ifAbsent%3A%20aBlock%0D%09%22Access%20a%20property%20value.%20If%20the%20property%2C%0D%09does%20not%20exist%2C%20return%20the%20value%20of%20aBlock.%22%0D%0D%09%3Cprimitive%3A%20%27primPropertyAtIfAbsent%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Object, unescape("propertyAt%3Aput%3A"), "propertyAt_put_", function Object__propertyAt_put_(aString,aValue){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primPropertyAtPut(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("propertyAt%3A%20aString%20put%3A%20aValue%0D%09%22Set%20the%20value%20of%20a%20property.%22%0D%0D%09%3Cprimitive%3A%20%27primPropertyAtPut%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -400,7 +410,8 @@ const self = this; return false;
 , "testing", unescape("isArray%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20an%20Array.%20%22%0D%0D%09%5Efalse"));
 smalltalk.bind(smalltalk.Object, unescape("isObject%3A"), "isObject_", function Object__isObject_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primIsObject(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("isObject%3A%20anObject%0D%09%22%20Return%20true%20if%20anObject%20is%20a%20smalltalk%20object.%0D%09Return%20false%20if%20the%20object%20is%20foreign%20%28e.g.%20javascript%29%20object.%22%0D%0D%09%3Cprimitive%3A%20%27primIsObject%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -442,7 +453,8 @@ const self = this; return (self.isInteger()).not();
 , "testing", unescape("isFloat%0D%09%22Return%20whether%20the%20reciever%20is%20a%20Float.%22%0D%0D%09%5Eself%20isInteger%20not"));
 smalltalk.bind(smalltalk.Number, unescape("isInteger"), "isInteger", function Number__isInteger(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primIsInteger(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self;
 return self;
 }
@@ -461,7 +473,8 @@ const self = this; return self._gt((0));
 , "testing", unescape("strictlyPositive%0D%09%22Return%20whether%20the%20receiver%20is%20%3E0.%22%0D%0D%09%5Eself%20%3E%200"));
 smalltalk.bind(smalltalk.Object, unescape("typeOf%3A"), "typeOf_", function Object__typeOf_(jsObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primTypeOf(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "utilities", unescape("typeOf%3A%20jsObject%0D%09%22%20Return%20the%20type%20of%20%28javascript%29Object.%20%22%0D%0D%09%3Cprimitive%3A%20%27primTypeOf%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed%20"));
@@ -475,7 +488,8 @@ const self = this; return (nil.isNil_(self.methodFor_(aSymbol))===false);
 , "messages", unescape("respondsTo%3A%20aSymbol%0D%09%22%20Return%20true%20if%20the%20receiver%20respond%20to%20message%20aSymbol.%20%22%0D%0D%09%5E%28self%20methodFor%3A%20aSymbol%29%20notNil"));
 smalltalk.bind(smalltalk.Object, unescape("basicDelete%3A"), "basicDelete_", function Object__basicDelete_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primBasicDelete(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("basicDelete%3A%20aString%0D%09%22%20Private%20-%20Basic%20implementation%20of%20deletion%20of%20property%20aString%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBasicDelete%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -757,7 +771,8 @@ return self.state_(old);
 , "accessing", unescape("withState%3A%20aState%20do%3A%20aBlock%0D%09%22%20Set%20the%20state%20of%20the%20receiver%20to%20aState%20during%20execution%20of%20aBlock.%20%22%0D%0D%09%7C%20old%20%7C%0D%09old%20%3A%3D%20self%20state.%0D%09%5E%5B%09self%20state%3A%20aState.%0D%09%09aBlock%20value%0D%09%5D%20ensure%3A%20%5B%0D%09%09self%20state%3A%20old%0D%09%5D"));
 smalltalk.bind(smalltalk.Smalltalk, unescape("eval%3A"), "eval_", function Smalltalk__eval_(jsExpression){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSmalltalk.primEval(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "javascript", unescape("eval%3A%20jsExpression%0D%09%22%20Return%20the%20result%20of%20evaluating%20a%20javascript%20expression%20in%20global%20context.%20%22%0D%0D%09%3Cprimitive%3A%27primEval%27%20module%3A%27SKSmalltalk%27%3E%0D%09%5Eself%20primitiveFailed%20"));
@@ -804,7 +819,8 @@ const self = this; return self.invalidMessage_("basicNew:");
 , "instantiation", unescape("basicNew%3A%20size%0D%09%22%20Return%20an%20instance%20of%20the%20receiver%20of%20specified%20size.%20%22%0D%0D%09%5Eself%20invalidMessage%3A%20%23basicNew%3A"));
 smalltalk.bind(smalltalk.Behavior, unescape("basicNew"), "basicNew", function Behavior__basicNew(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKObject.primBasicNew(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("basicNew%0D%09%22%20Return%20a%20new%20%28non-initialized%29%20instance%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBasicNew%27%20module%3A%20%27SKObject%27%3E%0D%09%5Eself%20primitiveFailed%20"));
@@ -895,14 +911,16 @@ return false;
 , "testing", unescape("inheritsFrom%3A%20aClass%0D%09%22%20Return%20true%20if%20the%20receiver%20inherits%20from%20aClass.%20%22%0D%0D%09self%20%3D%3D%20aClass%20ifTrue%3A%20%5B%20%5Etrue%20%5D.%0D%09self%20allSuperclassesDo%3A%20%5B%3Aeach%7C%0D%09%09aClass%20%3D%3D%20each%20ifTrue%3A%20%5B%20%5Etrue%20%5D%0D%09%5D.%0D%09%5Efalse"));
 smalltalk.bind(smalltalk.Behavior, unescape("prototype"), "prototype", function Behavior__prototype(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBehavior.primPrototype(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "accessing", unescape("prototype%0D%09%22%20Return%20the%20prototype%20of%20the%20receiver%20%28or%20nil%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primPrototype%27%20module%3A%20%27SKBehavior%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.Behavior, unescape("primitiveConstructor"), "primitiveConstructor", function Behavior__primitiveConstructor(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBehavior.primConstructor(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -922,13 +940,15 @@ return result.last();
 , "accessing", unescape("constructorName%0D%09%22%20Return%20the%20name%20of%20the%20constructor%20of%20the%20receiver%20%28or%20nil%29.%20%22%0D%0D%09%7C%20result%20fn%20%7C%0D%09fn%20%3A%3D%20self%20primitiveConstructor.%0D%09result%20%3A%3D%20fn%20basicAt%3A%20%23name.%0D%09result%20notNil%20ifTrue%3A%20%5B%0D%09%09result%20isEmpty%20ifTrue%3A%20%5B%20%5Enil%20%5D.%0D%09%09result%20%3D%20%27%24scarletConstructor%27%20ifTrue%3A%20%5B%20%5Enil%20%5D.%0D%09%09%5Eresult%0D%09%5D.%0D%09result%20%3A%3D%20%28fn%20toString%20upTo%3A%20%24%28%29%20asArrayOfSubstrings.%0D%09result%20size%20%3D%202%20ifFalse%3A%20%5B%20%5Enil%20%5D.%0D%09%5Eresult%20last"));
 smalltalk.bind(smalltalk.Behavior, unescape("methodsDo%3A"), "methodsDo_", function Behavior__methodsDo_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBehavior.primMethodsDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("methodsDo%3A%20aBlock%0D%09%22%20Evaluates%20aBlock%20for%20all%20the%20methods%20defined%20by%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primMethodsDo%27%20module%3A%20%27SKBehavior%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Behavior, unescape("selectorsDo%3A"), "selectorsDo_", function Behavior__selectorsDo_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBehavior.primSelectorsDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("selectorsDo%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20for%20all%20the%20selectors%20implemented%20by%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSelectorsDo%27%20module%3A%20%27SKBehavior%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -954,13 +974,15 @@ return result;
 , "accessing", unescape("selectors%0D%09%22%20Return%20the%20selectors%20implemented%20by%20the%20receiver.%20%22%0D%0D%09%7C%20result%20%7C%0D%09result%20%3A%3D%20Array%20new.%0D%09self%20selectorsDo%3A%20%5B%3Aeach%7C%20result%20add%3A%20each%20%5D.%0D%09%5Eresult"));
 smalltalk.bind(smalltalk.Behavior, unescape("implements%3A"), "implements_", function Behavior__implements_(aSymbol){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBehavior.primImplements(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("implements%3A%20aSymbol%0D%09%22%20Return%20true%20if%20the%20receiver%20implements%20message%20aSymbol.%20%22%0D%0D%09%3Cprimitive%3A%20%27primImplements%27%20module%3A%20%27SKBehavior%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Behavior, unescape("compiledMethodAt%3A"), "compiledMethodAt_", function Behavior__compiledMethodAt_(aSymbol){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBehavior.primCompiledMethodAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("compiledMethodAt%3A%20aSymbol%0D%09%22%20Return%20the%20compiled%20method%20at%20aSymbol%20implemented%20by%20the%20receiver%20%28or%20nil%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primCompiledMethodAt%27%20module%3A%20%27SKBehavior%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -1493,7 +1515,8 @@ smalltalk.addClass("Number", smalltalk.Object, [], 'Kernel');
 smalltalk.Number.$classVariableNames=("");
 smalltalk.bind(smalltalk.Number, unescape("%3D"), "_eq", function Number___eq(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primEquality(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return false;
 }
 , "comparing", unescape("%3D%20anObject%0D%20%20%20%20%22%20Return%20true%20if%20the%20receiver%20is%20equal%20to%20anObject.%20%22%0D%0D%09%3Cprimitive%3A%20%27primEquality%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Efalse"));
@@ -1508,25 +1531,29 @@ const self = this; return self.error_("Must be a Number.");
 , "testing", unescape("mustBeNumber%0D%09%22%20Signal%20an%20error%20if%20the%20receiver%20is%20not%20a%20Number.%20%22%0D%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27"));
 smalltalk.bind(smalltalk.Number, unescape("%3E"), "_gt", function Number___gt(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primGreaterThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "comparing", unescape("%3E%20aNumber%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20greater%20to%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGreaterThan%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27%20"));
 smalltalk.bind(smalltalk.Number, unescape("%3C"), "_lt", function Number___lt(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primLessThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.errror_("Must be a Number.");
 }
 , "comparing", unescape("%3C%20aNumber%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20smaller%20to%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primLessThan%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20errror%3A%20%27Must%20be%20a%20Number.%27%20"));
 smalltalk.bind(smalltalk.Number, unescape("%3E%3D"), "_gt_eq", function Number___gt_eq(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primGreaterThanEqualTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "comparing", unescape("%3E%3D%20aNumber%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20greater%20or%20equal%20to%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGreaterThanEqualTo%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27%20"));
 smalltalk.bind(smalltalk.Number, unescape("%3C%3D"), "_lt_eq", function Number___lt_eq(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primLessThanEqualTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "comparing", unescape("%3C%3D%20aNumber%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20smaller%20or%20equal%20to%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primLessThanEqualTo%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
@@ -1538,25 +1565,29 @@ return (0);
 , "accessing", unescape("sign%0D%09%22Return%201%20if%20the%20receiver%20is%20%3E%200.%0D%09Return%200%20if%20the%20receiver%20is%200.%0D%09Return%20-1%20if%20the%20receiver%20is%20%3C%200.%22%0D%0D%09self%20strictlyPositive%0D%09%09ifTrue%3A%20%5B%5E1%5D.%0D%09self%20negative%0D%09%09ifTrue%3A%20%5B%5E-1%5D.%0D%09%5E0"));
 smalltalk.bind(smalltalk.Number, unescape("+"), "_plus", function Number___plus(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primAddition(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("+%20aNumber%0D%09%22%20Return%20the%20result%20of%20operation%20on%20receiver%20and%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAddition%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("-"), "_minus", function Number___minus(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primSubtraction(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("-%20aNumber%0D%09%22%20Return%20the%20result%20of%20operation%20on%20receiver%20and%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSubtraction%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("*"), "_star", function Number___star(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primMultiplication(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("*%20aNumber%0D%09%22%20Return%20the%20result%20of%20operation%20on%20receiver%20and%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primMultiplication%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("/"), "_slash", function Number___slash(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primDivide(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number");
 }
 , "arithmetic", unescape("/%20aNumber%0D%09%22%20Return%20the%20result%20of%20operation%20on%20receiver%20and%20aNumber.%20%22%0D%0D%09%3Cprimitive%3A%20%27primDivide%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number%27.%20"));
@@ -1578,43 +1609,50 @@ return (self._slash(aNumber)).floor();
 , "arithmetic", unescape("//%20aNumber%0D%09%22%20Return%20the%20result%20of%20operation%20on%20receiver%20and%20aNumber.%20%22%0D%0D%09aNumber%20mustBeNumber.%0D%09aNumber%20%3D%200%20ifTrue%3A%20%5B%20self%20divideByZero%20%5D.%0D%09%5E%28self%20/%20aNumber%29%20floor"));
 smalltalk.bind(smalltalk.Number, unescape("sin"), "sin", function Number__sin(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primSin(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "arithmetic", unescape("sin%0D%0D%09%3Cprimitive%3A%20%27primSin%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Number, unescape("cos"), "cos", function Number__cos(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primCos(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "arithmetic", unescape("cos%0D%0D%09%3Cprimitive%3A%20%27primCos%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Number, unescape("tan"), "tan", function Number__tan(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primTan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "arithmetic", unescape("tan%0D%0D%09%3Cprimitive%3A%20%27primTan%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Number, unescape("atan2%3A"), "atan2_", function Number__atan2_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primAtan2(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Argument must be a Number.");
 }
 , "arithmetic", unescape("atan2%3A%20aNumber%0D%0D%09%3Cprimitive%3A%20%27primAtan2%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Argument%20must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("arcTan"), "arcTan", function Number__arcTan(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primArctan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "arithmetic", unescape("arcTan%0D%0D%09%3Cprimitive%3A%20%27primArctan%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Number, unescape("arcSin"), "arcSin", function Number__arcSin(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primArcsin(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "arithmetic", unescape("arcSin%0D%0D%09%3Cprimitive%3A%20%27primArcsin%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Number, unescape("arcCos"), "arcCos", function Number__arcCos(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primArccos(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "arithmetic", unescape("arcCos%0D%0D%09%3Cprimitive%3A%20%27primArccos%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -1628,19 +1666,22 @@ const self = this; return self._star(self);
 , "arithmetic", unescape("squared%0D%09%5Eself%20*%20self%20"));
 smalltalk.bind(smalltalk.Number, unescape("sqrt"), "sqrt", function Number__sqrt(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primSqrt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a positive number.");
 }
 , "arithmetic", unescape("sqrt%0D%0D%09%3Cprimitive%3A%20%27primSqrt%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%27Must%20be%20a%20positive%20number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("%3C%3C"), "_lt_lt", function Number___lt_lt(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primBitShiftLeft(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("%3C%3C%20aNumber%0D%09%22%20Return%20the%20receiver%20shifted%20aNumber%20of%20bits%20to%20the%20left.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBitShiftLeft%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%27Must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("%3E%3E"), "_gt_gt", function Number___gt_gt(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primBitShiftRight(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("%3E%3E%20aNumber%0D%09%22%20Return%20the%20receiver%20shifted%20aNumber%20of%20bits%20to%20the%20right.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBitShiftRight%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
@@ -1663,7 +1704,8 @@ const self = this; if ((self.negative()).valueOf()) {return self.ceiling()} else
 , "arithmetic", unescape("truncated%0D%09%22%20Return%20the%20receiver%20truncated.%20%22%0D%0D%09%5Eself%20negative%0D%09%09ifTrue%3A%20%5Bself%20ceiling%5D%0D%09%09ifFalse%3A%20%5Bself%20floor%5D"));
 smalltalk.bind(smalltalk.Number, unescape("ln"), "ln", function Number__ln(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primLn(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a positive Number.");
 }
 , "arithmetic", unescape("ln%0D%09%22Return%20the%20natural%20log%20of%20the%20receiver%22%0D%0D%09%3Cprimitive%3A%20%27primLn%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20positive%20Number.%27.%20"));
@@ -1673,19 +1715,22 @@ const self = this; return (self.ln())._slash((aBaseNumber.ln()));
 , "arithmetic", unescape("log%3A%20aBaseNumber%0D%09%22Return%20the%20log%20of%20the%20receiver%20in%20the%20provided%20base.%22%0D%0D%09%5Eself%20ln%20/%20aBaseNumber%20ln"));
 smalltalk.bind(smalltalk.Number, unescape("floor"), "floor", function Number__floor(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primFloor(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("floor%0D%09%22Return%20the%20largest%20integer%20less%20than%20or%20equal%20to%20the%20receiver.%22%0D%0D%09%3Cprimitive%3A%20%27primFloor%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("ceiling"), "ceiling", function Number__ceiling(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primCeiling(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("ceiling%0D%09%22Return%20the%20smallest%20integer%20greater%20than%20or%20equal%20to%20the%20receiver.%22%0D%0D%09%3Cprimitive%3A%20%27primCeiling%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Must%20be%20a%20Number.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("raisedTo%3A"), "raisedTo_", function Number__raisedTo_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primRaisedTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Must be a Number.");
 }
 , "arithmetic", unescape("raisedTo%3A%20aNumber%0D%09%22Raise%20the%20receiver%20to%20the%20power%20of%20aNumber.%22%0D%0D%09%3Cprimitive%3A%20%27primRaisedTo%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%27Must%20be%20a%20Number.%27.%20"));
@@ -1700,19 +1745,22 @@ const self = this; return (-1)._minus(self);
 , "bit operations", unescape("bitInvert%0D%09%22Invert%20the%20bits%20of%20the%20receiver%22%0D%0D%09%5E%20-1%20-%20self"));
 smalltalk.bind(smalltalk.Number, unescape("bitAnd%3A"), "bitAnd_", function Number__bitAnd_(anInteger){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primBitAnd(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Argument and Receiver must be an integer.");
 }
 , "bit operations", unescape("bitAnd%3A%20anInteger%0D%09%22Bit%20and%20the%20receiver%20and%20the%20argument.%22%0D%0D%09%3Cprimitive%3A%20%27primBitAnd%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Argument%20and%20Receiver%20must%20be%20an%20integer.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("bitOr%3A"), "bitOr_", function Number__bitOr_(anInteger){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primBitOr(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Argument and Receiver must be an integer.");
 }
 , "bit operations", unescape("bitOr%3A%20anInteger%0D%09%22Bit%20or%20the%20receiver%20and%20the%20argument.%22%0D%0D%09%3Cprimitive%3A%20%27primBitOr%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Argument%20and%20Receiver%20must%20be%20an%20integer.%27.%20"));
 smalltalk.bind(smalltalk.Number, unescape("bitXor%3A"), "bitXor_", function Number__bitXor_(anInteger){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primBitXor(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.error_("Argument and Receiver must be an integer.");
 }
 , "bit operations", unescape("bitXor%3A%20anInteger%0D%09%22Exclusive%20or%20the%20receiver%20with%20the%20argument.%22%0D%0D%09%3Cprimitive%3A%27primBitXor%27%20module%3A%27SKNumber%27%3E%0D%09%5Eself%20error%3A%20%27Argument%20and%20Receiver%20must%20be%20an%20integer.%27.%20"));
@@ -1731,7 +1779,8 @@ return self;
 , "converting", unescape("abs%0D%09%22%20Return%20the%20absolute%20value%20of%20the%20receiver.%20%22%0D%0D%09self%20%3C%200%20ifTrue%3A%20%5B%20%5Eself%20negated%20%5D.%0D%09%5Eself"));
 smalltalk.bind(smalltalk.Number, unescape("rounded"), "rounded", function Number__rounded(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primRounded(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("rounded%0D%09%22%20Return%20the%20receiver%20rounded.%20%22%0D%0D%09%3Cprimitive%3A%20%27primRounded%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -1758,13 +1807,15 @@ return self;
 , "enumerating", unescape("timesRepeat%3A%20aBlock%0D%09%22%20Evaluates%20aBlock%20a%20number%20of%20times%20given%20by%20the%20receiver.%0D%09Return%20the%20receiver.%0D%09%22%0D%0D%09%7C%20count%20%7C%0D%09aBlock%20argumentCount%20%3D%201%20ifTrue%3A%20%5B%0D%09%09%5E1%20to%3A%20self%20do%3A%20aBlock%0D%09%5D.%0D%09count%20%3A%3D%201.%0D%09%5B%20count%20%3E%20self%20%5D%20whileFalse%3A%20%5B%0D%09%09aBlock%20value.%0D%09%09count%20%3A%3D%20count%20+%201%0D%09%5D"));
 smalltalk.bind(smalltalk.Number, unescape("to%3Ado%3A"), "to_do_", function Number__to_do_(aNumber,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primToDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "iterating", unescape("to%3A%20aNumber%20do%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20from%20the%20receiver%20to%20aNumber.%0D%09Return%20the%20receiver.%22%0D%0D%09%3Cprimitive%3A%20%27primToDo%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Number, unescape("to%3Aby%3Ado%3A"), "to_by_do_", function Number__to_by_do_(aNumber,increment,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primToByDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "iterating", unescape("to%3A%20aNumber%20by%3A%20increment%20do%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20for%20the%20numbers%20between%20the%20receiver%20and%20aNumber%20where%20each%20number%20is%20the%20previous%20number%20plus%20increment.%0D%09Return%20the%20receiver.%22%0D%0D%09%3Cprimitive%3A%20%27primToByDo%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -1783,7 +1834,8 @@ return self;
 , "printing", unescape("printOn%3A%20aStream%0D%09%22Print%20the%20receiver%20on%20aStream%20in%20base%2010.%22%0D%0D%09aStream%20nextPutAll%3A%20self%20asString"));
 smalltalk.bind(smalltalk.Number, unescape("isNumber"), "isNumber", function Number__isNumber(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primIsNumber(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return false;
 }
 , "testing", unescape("isNumber%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20a%20number.%20%22%0D%0D%09%3Cprimitive%3A%20%27primIsNumber%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Efalse.%20"));
@@ -1842,7 +1894,8 @@ const self = this; return self;
 , "copying", unescape("deepCopy%0D%09%22%20Return%20a%20deep%20copy%20of%20the%20receiver.%20%22%0D%0D%09%5Eself"));
 smalltalk.bind(smalltalk.Number.$klass, unescape("pi"), "pi", function Number_class__pi(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primPi(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("pi%0D%09%22%20Return%20the%20singular%20value%20PI.%20%22%0D%0D%09%3Cprimitive%3A%20%27primPi%27%20module%3A%20%27SKNumber%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -1906,7 +1959,8 @@ const self = this; return true;
 , "accesssing", unescape("isBlock%0D%0D%09%5E%20true%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("whileTrue%3A"), "whileTrue_", function BlockClosure__whileTrue_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primWhileTrue(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((self.isBlock()).not()) {return self.error_("Argument must be a Block")};
 return self.primitiveFailed();
 }
@@ -1918,37 +1972,43 @@ return nil;
 , "iterating", unescape("whileFalse%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20while%20the%20result%20of%20evaluating%20the%20receiver%20is%20false.%20%22%0D%09%5Bself%20value%20not%5D%20whileTrue%3A%20aBlock.%0D%09%5Enil.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("value"), "value", function BlockClosure__value(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primValue(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("value%0D%09%22%20Return%20the%20result%20of%20evaluating%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primValue%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("value%3A"), "value_", function BlockClosure__value_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primValueWith(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("value%3A%20anObject%0D%09%22%20Return%20the%20result%20of%20evaluating%20the%20receiver%20with%20anObject.%20%22%0D%0D%09%3Cprimitive%3A%20%27primValueWith%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("value%3Avalue%3A"), "value_value_", function BlockClosure__value_value_(firstArgument,secondArgument){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primValueWith2Objects(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("value%3A%20firstArgument%20value%3A%20secondArgument%0D%09%22%20Return%20the%20result%20of%20evaluating%20the%20receiver%20with%20arguments.%20%22%0D%0D%09%3Cprimitive%3A%20%27primValueWith2Objects%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("value%3Avalue%3Avalue%3A"), "value_value_value_", function BlockClosure__value_value_value_(firstArgument,secondArgument,thirdArgument){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primValueWith3Objects(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("value%3A%20firstArgument%20value%3A%20secondArgument%20value%3A%20thirdArgument%0D%09%22%20Return%20the%20result%20of%20evaluating%20the%20receiver%20with%20arguments.%20%22%0D%0D%09%3Cprimitive%3A%20%27primValueWith3Objects%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("value%3Avalue%3Avalue%3Avalue%3A"), "value_value_value_value_", function BlockClosure__value_value_value_value_(firstArgument,secondArgument,thirdArgument,fourthArgument){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primValueWith4Objects(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("value%3A%20firstArgument%20value%3A%20secondArgument%20value%3A%20thirdArgument%20value%3A%20fourthArgument%0D%09%22%20Return%20the%20result%20of%20evaluating%20the%20receiver%20with%20arguments.%20%22%0D%0D%09%3Cprimitive%3A%20%27primValueWith4Objects%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("valueWithArguments%3A"), "valueWithArguments_", function BlockClosure__valueWithArguments_(aCollection){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primValueWithArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aCollection.isArray()).not()) {return self.error_("aCollection must be an Array")};
 if (((aCollection.argumentCount())._eq((self.argumentCount()))).not()) {return self.error_(((("Receiver requested "._comma(((self.argumentCount()).toString())))._comma(" Arguments given "))._comma(((aCollection.argumentCount()).toString()))))};
 return self.primitiveFailed();
@@ -1963,7 +2023,8 @@ if (((smalltalk.is_kindOf_(error,anExceptionType))).valueOf()) {return aBlock.va
 , "error", unescape("on%3A%20anExceptionType%20do%3A%20aBlock%0D%09%22%20Return%20the%20result%20of%20evaluating%20the%20receiver%20catching%20exceptions.%20%22%0D%0D%09%5Eself%20try%3A%20self%20catch%3A%20%5B%3Aerror%20%7C%0D%09%09%28error%20isKindOf%3A%20anExceptionType%29%0D%09%09ifTrue%3A%20%5B%20aBlock%20value%3A%20error%20%5D%0D%09%09ifFalse%3A%20%5B%20error%20signal%20%5D%0D%09%5D"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("try%3Acatch%3A"), "try_catch_", function BlockClosure__try_catch_(aBlock,anotherBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primTryCatch(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "private", unescape("try%3A%20aBlock%20catch%3A%20anotherBlock%0D%09%22%20Private%20-%20Try%20to%20evaluate%20aBlock%20catching%20exceptions%20with%20catchBlock.%20%22%0D%0D%09%3Cprimitive%3A%27primTryCatch%27%20module%3A%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -1979,13 +2040,15 @@ return self;
 , "evaluating", unescape("valueDeferred%0D%09%22%20Evaluate%20the%20receiver%20deferred%20in%20time.%0D%09Return%20the%20receiver.%22%0D%0D%09self%20valueDeferred%3A%200"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("ensure%3A"), "ensure_", function BlockClosure__ensure_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primEnsure(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "error", unescape("ensure%3A%20aBlock%0D%09%22%20Returns%20the%20result%20of%20evaluating%20the%20receiver.%0D%09Execute%20aBlock%20after%20the%20receiver%20is%20executed.%22%0D%0D%09%3Cprimitive%3A%20%27primEnsure%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.BlockClosure, unescape("argumentCount"), "argumentCount", function BlockClosure__argumentCount(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBlockClosure.primArgumentsCount(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("argumentCount%0D%09%22%20Return%20the%20number%20of%20arguments%20defined%20by%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primArgumentsCount%27%20module%3A%20%27SKBlockClosure%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2009,7 +2072,8 @@ smalltalk.addClass("Boolean", smalltalk.Object, [], 'Kernel');
 smalltalk.Boolean.$classVariableNames=("");
 smalltalk.bind(smalltalk.Boolean, unescape("%3D"), "_eq", function Boolean___eq(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primEquals(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3D%20anObject%0D%20%20%20%20%22%20Return%20true%20if%20the%20receiver%20is%20equal%20to%20anObject.%20%22%0D%0D%09%3Cprimitive%3A%20%27primEquals%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2019,21 +2083,24 @@ const self = this; return self;
 , "accessing", unescape("yourself%0D%09%5Eself"));
 smalltalk.bind(smalltalk.Boolean, unescape("ifTrue%3A"), "ifTrue_", function Boolean__ifTrue_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primIfTrue(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aBlock.isBlock()).not()) {return self.error_("Argument must be a Block.")};
 return self.primitiveFailed();
 }
 , "control", unescape("ifTrue%3A%20aBlock%0D%0D%09%3Cprimitive%3A%20%27primIfTrue%27%20module%3A%27SKBoolean%27%3E%0D%09aBlock%20isBlock%0D%09%09ifFalse%3A%5B%5Eself%20error%3A%27Argument%20must%20be%20a%20Block.%27%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("ifFalse%3A"), "ifFalse_", function Boolean__ifFalse_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primIfFalse(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aBlock.isBlock()).not()) {return self.error_("Argument must be a Block.")};
 return self.primitiveFailed();
 }
 , "control", unescape("ifFalse%3A%20aBlock%0D%0D%09%3Cprimitive%3A%20%27primIfFalse%27%20module%3A%20%27SKBoolean%27%3E%0D%09aBlock%20isBlock%0D%09%09ifFalse%3A%5B%5Eself%20error%3A%27Argument%20must%20be%20a%20Block.%27%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("ifTrue%3AifFalse%3A"), "ifTrue_ifFalse_", function Boolean__ifTrue_ifFalse_(aBlock,anotherBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primTrueFalse(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aBlock.isBlock()).not()) {return self.error_("Argument must be a Block.")};
 if ((anotherBlock.isBlock()).not()) {return self.error_("Argument must be a Block.")};
 return self.primitiveFailed();
@@ -2041,7 +2108,8 @@ return self.primitiveFailed();
 , "control", unescape("ifTrue%3A%20aBlock%0DifFalse%3A%20anotherBlock%0D%0D%09%3Cprimitive%3A%27primTrueFalse%27%20module%3A%27SKBoolean%27%3E%0D%09aBlock%20isBlock%0D%09%09ifFalse%3A%5B%5Eself%20error%3A%27Argument%20must%20be%20a%20Block.%27%5D.%0D%09anotherBlock%20isBlock%0D%09%09ifFalse%3A%5B%5Eself%20error%3A%27Argument%20must%20be%20a%20Block.%27%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("ifFalse%3AifTrue%3A"), "ifFalse_ifTrue_", function Boolean__ifFalse_ifTrue_(anotherBlock,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primFalseTrue(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aBlock.isBlock()).not()) {return self.error_("Argument must be a Block.")};
 if ((anotherBlock.isBlock()).not()) {return self.error_("Argument must be a Block.")};
 return self.primitiveFailed();
@@ -2049,25 +2117,29 @@ return self.primitiveFailed();
 , "control", unescape("ifFalse%3A%20anotherBlock%0DifTrue%3A%20aBlock%0D%0D%09%3Cprimitive%3A%27primFalseTrue%27%20module%3A%20%27SKBoolean%27%3E%0D%09aBlock%20isBlock%0D%09%09ifFalse%3A%5B%5Eself%20error%3A%27Argument%20must%20be%20a%20Block.%27%5D.%0D%09anotherBlock%20isBlock%0D%09%09ifFalse%3A%5B%5Eself%20error%3A%27Argument%20must%20be%20a%20Block.%27%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("and%3A"), "and_", function Boolean__and_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primAnd(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "control", unescape("and%3A%20aBlock%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20true%20and%20the%20result%20of%20evaluating%20aBlock%20is%20also%20true.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAnd%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("or%3A"), "or_", function Boolean__or_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primOr(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "control", unescape("or%3A%20aBlock%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20true%20or%20the%20result%20of%20evaluating%20aBlock%20is%20true.%20%22%0D%0D%09%3Cprimitive%3A%20%27primOr%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("not"), "not", function Boolean__not(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primNot(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "control", unescape("not%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20false.%20%22%0D%0D%09%3Cprimitive%3A%20%27primNot%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed"));
 smalltalk.bind(smalltalk.Boolean, unescape("printString"), "printString", function Boolean__printString(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primPrintString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "printing", unescape("printString%0D%09%22%20Return%20a%20printable%20representation%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primPrintString%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2088,13 +2160,15 @@ const self = this; return self;
 , "copying", unescape("deepCopy%0D%09%22%20Return%20a%20deep%20copy%20of%20the%20receiver.%20%22%0D%0D%09%5Eself"));
 smalltalk.bind(smalltalk.Boolean, unescape("%26"), "_amp", function Boolean___amp(aBoolean){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primAmpersand(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "logic", unescape("%26%20aBoolean%0D%09%22%20Return%20true%20if%20both%20the%20receiver%20and%20argument%20are%20true.%20False%20in%20any%20other%20case.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAmpersand%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed%20"));
 smalltalk.bind(smalltalk.Boolean, unescape("%7C"), "_bar", function Boolean___bar(aBoolean){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKBoolean.primPipeSymbol(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "logic", unescape("%7C%20aBoolean%0D%09%22%20Return%20true%20if%20both%20the%20receiver%20and%20argument%20are%20true.%20False%20in%20any%20other%20case.%20%22%0D%0D%09%3Cprimitive%3A%20%27primPipeSymbol%27%20module%3A%20%27SKBoolean%27%3E%0D%09%5Eself%20primitiveFailed%20"));
@@ -2110,25 +2184,29 @@ smalltalk.addClass("DateTime", smalltalk.Object, [], 'Kernel');
 smalltalk.DateTime.$classVariableNames=("");
 smalltalk.bind(smalltalk.DateTime.$klass, unescape("utcOffsetSeconds"), "utcOffsetSeconds", function DateTime_class__utcOffsetSeconds(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetUtcOffsetSeconds(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("utcOffsetSeconds%0D%09%22%20Return%20the%20year%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetUtcOffsetSeconds%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("year"), "year", function DateTime__year(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetYear(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("year%0D%09%22%20Return%20the%20year%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetYear%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("month"), "month", function DateTime__month(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetMonth(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("month%0D%09%22%20Return%20the%20month%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetMonth%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("month%3A"), "month_", function DateTime__month_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetMonth(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("month%3A%20aNumber%0D%09%22%20Set%20the%20month%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSetMonth%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2138,31 +2216,36 @@ const self = this; return self.dayOfWeek();
 , "accessing", unescape("day%0D%09%22%20Return%20the%20day%20of%20the%20receiver.%20%22%0D%0D%09%5Eself%20dayOfWeek"));
 smalltalk.bind(smalltalk.DateTime, unescape("dayOfWeek"), "dayOfWeek", function DateTime__dayOfWeek(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetDayOfWeek(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("dayOfWeek%0D%09%22%20Return%20the%20day%20of%20week%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetDayOfWeek%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("year%3A"), "year_", function DateTime__year_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetYear(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("year%3A%20aNumber%0D%09%22%20Set%20the%20year%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSetYear%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("dayOfMonth"), "dayOfMonth", function DateTime__dayOfMonth(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetDayOfMonth(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("dayOfMonth%0D%09%22%20Return%20the%20day%20of%20month%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetDayOfMonth%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("dayOfMonth%3A"), "dayOfMonth_", function DateTime__dayOfMonth_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetDayOfMonth(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("dayOfMonth%3A%20aNumber%0D%09%22%20Set%20the%20day%20of%20month%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primSetDayOfMonth%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("asString"), "asString", function DateTime__asString(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primAsString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asString%0D%09%22%20Return%20the%20text%20representation%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsString%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2172,7 +2255,8 @@ const self = this; return self.asString();
 , "printing", unescape("printString%0D%09%22%20Return%20the%20printable%20representation%20of%20the%20receiver.%20%22%0D%0D%09%5Eself%20asString"));
 smalltalk.bind(smalltalk.DateTime, unescape("asMilliseconds"), "asMilliseconds", function DateTime__asMilliseconds(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetTime(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asMilliseconds%0D%09%22%20Return%20the%20receiver%20as%20milliseconds.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetTime%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2186,25 +2270,29 @@ const self = this; return self.asMilliseconds();
 , "accessing", unescape("time%0D%09%22%20Return%20the%20time%20of%20the%20receiver.%20%22%0D%0D%09%5Eself%20asMilliseconds.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("time%3A"), "time_", function DateTime__time_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetTime(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primFailValue();
 }
 , "accessing", unescape("time%3A%20aNumber%0D%09%22%20Set%20the%20time%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primSetTime%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primFailValue.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("asDateString"), "asDateString", function DateTime__asDateString(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primAsDateString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asDateString%0D%09%22%20Return%20the%20date%20string%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsDateString%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("asTimeString"), "asTimeString", function DateTime__asTimeString(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primAsTimeString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asTimeString%0D%09%22%20Return%20the%20time%20string%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsTimeString%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("asLocaleString"), "asLocaleString", function DateTime__asLocaleString(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primAsLocaleString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asLocaleString%0D%09%22%20Return%20the%20locale%20string%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primAsLocaleString%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2214,35 +2302,40 @@ const self = this; return self.asMilliseconds();
 , "converting", unescape("asNumber%0D%09%22%20Return%20the%20receiver%20as%20a%20Number.%20%22%0D%0D%09%5Eself%20asMilliseconds"));
 smalltalk.bind(smalltalk.DateTime, unescape("hours%3A"), "hours_", function DateTime__hours_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetHours(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if (((aNumber._gt((23))).or_((aNumber._lt((0))))).valueOf()) {return self.error_(("argument must be an integer between 0 and 23. argument given: "._comma((aNumber.toString()))))};
 return self.primitiveFailed();
 }
 , "accessing", unescape("hours%3A%20aNumber%0D%09%22%20Set%20the%20hours%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSetHours%27%20module%3A%20%27SKDateTime%27%3E%0D%09%28aNumber%20%3E%2023%20or%3A%20aNumber%20%3C%200%29%0D%09%09ifTrue%3A%5B%5Eself%20error%3A%27argument%20must%20be%20an%20integer%20between%200%20and%2023.%20argument%20given%3A%20%27%2C%20aNumber%20toString%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("minutes%3A"), "minutes_", function DateTime__minutes_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetMinutes(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if (((aNumber._gt((59))).or_((aNumber._lt((0))))).valueOf()) {return self.error_(("argument must be an integer between 0 and 59. argument given: "._comma((aNumber.toString()))))};
 return self.primitiveFailed();
 }
 , "accessing", unescape("minutes%3A%20aNumber%0D%09%22%20Set%20the%20minutes%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSetMinutes%27%20module%3A%20%27SKDateTime%27%3E%0D%09%28aNumber%20%3E%2059%20or%3A%20aNumber%20%3C%200%29%0D%09%09ifTrue%3A%5B%5Eself%20error%3A%27argument%20must%20be%20an%20integer%20between%200%20and%2059.%20argument%20given%3A%20%27%2C%20aNumber%20toString%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("seconds%3A"), "seconds_", function DateTime__seconds_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetSeconds(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if (((aNumber._gt((59))).or_((aNumber._lt((0))))).valueOf()) {return self.error_(("argument must be an integer between 0 and 59. argument given: "._comma((aNumber.toString()))))};
 return self.primitiveFailed();
 }
 , "accessing", unescape("seconds%3A%20aNumber%0D%09%22%20Set%20the%20seconds%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSetSeconds%27%20module%3A%20%27SKDateTime%27%3E%0D%09%28aNumber%20%3E%2059%20or%3A%20aNumber%20%3C%200%29%0D%09%09ifTrue%3A%5B%5Eself%20error%3A%27argument%20must%20be%20an%20integer%20between%200%20and%2059.%20argument%20given%3A%20%27%2C%20aNumber%20toString%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("milliseconds%3A"), "milliseconds_", function DateTime__milliseconds_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primSetMilliseconds(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if (((aNumber._gt((999))).or_((aNumber._lt((0))))).valueOf()) {return self.error_(("argument must be an integer between 0 and 999. argument given: "._comma((aNumber.toString()))))};
 return self.primitiveFailed();
 }
 , "accessing", unescape("milliseconds%3A%20aNumber%0D%09%22%20Set%20the%20milliseconds%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primSetMilliseconds%27%20module%3A%27SKDateTime%27%3E%0D%09%28aNumber%20%3E%20999%20or%3A%20aNumber%20%3C%200%29%0D%09%09ifTrue%3A%5B%5Eself%20error%3A%27argument%20must%20be%20an%20integer%20between%200%20and%20999.%20argument%20given%3A%20%27%2C%20aNumber%20toString%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("hours"), "hours", function DateTime__hours(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetHours(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("hours%0D%09%22%20Return%20the%20hours%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primGetHours%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2252,43 +2345,50 @@ const self = this; return self.getMinutes();
 , "accessing", unescape("minutes%0D%09%22%20Return%20the%20minutes%20of%20the%20receiver.%20%22%0D%0D%09%5Eself%20getMinutes"));
 smalltalk.bind(smalltalk.DateTime, unescape("seconds"), "seconds", function DateTime__seconds(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetSeconds(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("seconds%0D%09%22%20Return%20the%20seconds%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetSeconds%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("milliseconds"), "milliseconds", function DateTime__milliseconds(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGetMilliseconds(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("milliseconds%0D%09%22%20Return%20the%20milliseconds%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGetMilliseconds%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("%3D"), "_eq", function DateTime___eq(aDateTime){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primEquality(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return false;
 }
 , "comparing", unescape("%3D%20aDateTime%0D%09%22Return%20true%20if%20the%20receiver%20is%20equivalent%20to%20aDateTime%22%0D%0D%09%3Cprimitive%3A%20%27primEquality%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Efalse"));
 smalltalk.bind(smalltalk.DateTime, unescape("%3C"), "_lt", function DateTime___lt(aDateTime){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primLessThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3C%20aDateTime%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20previous%20to%20aDateTime.%20%22%0D%0D%09%3Cprimitive%3A%20%27primLessThan%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("%3E"), "_gt", function DateTime___gt(aDateTime){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGreaterThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3E%20aDateTime%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20later%20than%20aDateTime.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGreaterThan%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("%3C%3D"), "_lt_eq", function DateTime___lt_eq(aDateTime){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primLessThanEqualTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3C%3D%20aDateTime%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20previous%20or%20equal%20to%20aDateTime.%20%22%0D%0D%09%3Cprimitive%3A%27primLessThanEqualTo%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("%3E%3D"), "_gt_eq", function DateTime___gt_eq(aDateTime){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primGreaterThanEqualTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3E%3D%20aDateTime%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20later%20or%20equal%20to%20aDateTime.%20%22%0D%0D%09%3Cprimitive%3A%27primGreaterThanEqualTo%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2302,7 +2402,8 @@ const self = this; return (self.asSeconds())._plus((aDateTime.asSeconds()));
 , "arithmetic", unescape("+%20aDateTime%0D%09%22%20Return%20the%20result%20of%20operation%20with%20receiver%20and%20aDateTime%20in%20seconds.%20%22%0D%0D%09%5Eself%20asSeconds%20+%20aDateTime%20asSeconds.%20"));
 smalltalk.bind(smalltalk.DateTime, unescape("isValid"), "isValid", function DateTime__isValid(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primIsValid(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("isValid%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20a%20valid%20instance.%20%22%0D%0D%09%3Cprimitive%3A%27primIsValid%27%20module%3A%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2316,7 +2417,8 @@ const self = this; return self;
 , "converting", unescape("asDateTime%0D%09%22Return%20a%20DateTime%22%0D%0D%09%5Eself"));
 smalltalk.bind(smalltalk.DateTime.$klass, unescape("fromString%3A"), "fromString_", function DateTime_class__fromString_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primNew(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("fromString%3A%20aString%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%0D%09DateTime%20fromString%3A%20%271962/12/15%2001%3A40%3A00%27%22%0D%0D%09%3Cprimitive%3A%20%27primNew%27%20module%3A%20%27SKDateTime%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2326,7 +2428,8 @@ const self = this; return self.fromMilliseconds_((aNumber._star((1000))));
 , "instantiation", unescape("fromSeconds%3A%20aNumber%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%5Eself%20fromMilliseconds%3A%20aNumber%20*%201000"));
 smalltalk.bind(smalltalk.DateTime.$klass, unescape("fromMilliseconds%3A"), "fromMilliseconds_", function DateTime_class__fromMilliseconds_(aNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKDateTime.primNew(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("fromMilliseconds%3A%20aNumber%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%09%3Cprimitive%3A%20%27primNew%27%20module%3A%20%27SKDateTime%27%3E%0D%09%09%5Eself%20primitiveFailed.%20"));
@@ -2398,7 +2501,8 @@ const self = this; return (smalltalk.ClassBuilder.$$new()).superclass_subclass_i
 , "instantiation", unescape("subclass%3A%20aString%20instanceVariableNames%3A%20aString2%20category%3A%20aString3%0D%09%22%20Create%20a%20subclass%20of%20the%20receiver.%20%22%0D%0D%09%5EClassBuilder%20new%0D%09%09superclass%3A%20self%0D%09%09subclass%3A%20aString%0D%09%09instanceVariableNames%3A%20aString2%0D%09%09category%3A%20aString3"));
 smalltalk.bind(smalltalk.UndefinedObject, unescape("asJSONObject"), "asJSONObject", function UndefinedObject__asJSONObject(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKUndefinedObject.primAsJSONObject(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -2935,19 +3039,22 @@ return (0);
 , "testing", unescape("indexOf%3A%20anObject%0D%09%22%20Return%20the%20position%20of%20anObject%20in%20the%20receiver%2C%20or%200.%20%22%0D%0D%09%5Eself%20indexOf%3A%20anObject%20ifAbsent%3A%20%5B%200%20%5D"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("indexOf%3AifAbsent%3A"), "indexOf_ifAbsent_", function SequenceableCollection__indexOf_ifAbsent_(anObject,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primIndexOfIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("indexOf%3A%20anObject%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20position%20of%20anObject%20in%20the%20receiver%2C%20or%20the%20result%20of%20evaluating%20aBlock.%20%22%0D%0D%09%3Cprimitive%3A%27primIndexOfIfAbsent%27%20module%3A%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("do%3A"), "do_", function SequenceableCollection__do_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("do%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20the%20contents%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primDo%27%20module%3A%20%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("detect%3AifNone%3A"), "detect_ifNone_", function SequenceableCollection__detect_ifNone_(aBlock,anotherBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primDetectIfNone(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("detect%3A%20aBlock%20ifNone%3A%20anotherBlock%0D%09%22%20Return%20the%20object%20in%20the%20receiver%20that%20return%20true%20when%20evaluated%20with%20aBlock%20or%20the%20result%20of%20evaluating%20anotherBlock.%20%22%0D%0D%09%3Cprimitive%3A%20%27primDetectIfNone%27%20module%3A%20%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2962,19 +3069,22 @@ return self;
 , "enumerating", unescape("doWithIndex%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20the%20contents%20of%20the%20receiver.%20%22%0D%0D%09%7C%20element%20%7C%0D%091%20to%3A%20self%20size%0D%09%09do%3A%0D%09%09%09%5B%3Aindex%20%7C%0D%09%09%09aBlock%0D%09%09%09%09value%3A%20%28self%20at%3A%20index%29%0D%09%09%09%09value%3A%20index%5D"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("reversed"), "reversed", function SequenceableCollection__reversed(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primReversed(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "copying", unescape("reversed%0D%09%22%20Return%20an%20array%20with%20the%20contents%20of%20the%20receiver%20in%20reverse%20order.%20%22%0D%0D%09%3Cprimitive%3A%20%27primReversed%27%20module%3A%20%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("isEmpty"), "isEmpty", function SequenceableCollection__isEmpty(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primIsEmpty(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("isEmpty%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20empty.%0D%09Note%3A%20%5Eself%20size%20%3D%200%20is%20slower%20than%20inlined%20impl.%22%0D%0D%09%3Cprimitive%3A%20%27primIsEmpty%27%20module%3A%20%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("reverseDo%3A"), "reverseDo_", function SequenceableCollection__reverseDo_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primReverseDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("reverseDo%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20the%20contents%20of%20the%20receiver%20in%20reverse%20order%20of%20iteration.%20%22%0D%0D%09%3Cprimitive%3A%20%27primReverseDo%27%20module%3A%20%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -2995,7 +3105,8 @@ return false;
 , "testing", unescape("includes%3A%20anObject%0D%09%22%20Return%20true%20if%20anObject%20is%20in%20the%20receiver.%0D%09Note%3A%20the%20indexOf%28%29%20function%20fail%20to%20search%20in%20case%20of%20string%20literals%20in%20Array%20contents.%0D%09%22%0D%09%28self%20isObject%3A%20anObject%29%0D%09%09ifFalse%3A%20%5Bself%20error%3A%20%27argument%20must%20be%20an%20object%27%5D.%0D%09self%20do%3A%20%5B%3Aeach%20%7C%20anObject%20%3D%20each%20ifTrue%3A%5B%5Etrue%5D%5D.%0D%09%5Efalse.%20"));
 smalltalk.bind(smalltalk.SequenceableCollection, unescape("occurrencesOf%3A"), "occurrencesOf_", function SequenceableCollection__occurrencesOf_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKSequenceableCollection.primOccurrencesOf(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "counting", unescape("occurrencesOf%3A%20anObject%0D%09%22%20Return%20the%20occurrences%20of%20anObject%20in%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primOccurrencesOf%27%20module%3A%20%27SKSequenceableCollection%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3215,7 +3326,8 @@ const self = this; return smalltalk.StringStream;
 , "accessing", unescape("streamClass%0D%09%22%20Return%20the%20streamming%20support%20for%20the%20receiver%27s%20instances.%20%22%0D%0D%09%5EStringStream"));
 smalltalk.bind(smalltalk.String.$klass, unescape("fromString%3A"), "fromString_", function String_class__fromString_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primFromString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("fromString%3A%20aString%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primFromString%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3261,7 +3373,8 @@ const self = this; return ((aCharacter._comma(bCharacter))._comma(cCharacter))._
 , "instantiation", unescape("with%3A%20aCharacter%20with%3A%20bCharacter%0D%09with%3A%20cCharacter%20with%3A%20dCharacter%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%5EaCharacter%20%2C%20bCharacter%20%2C%20cCharacter%20%2C%20dCharacter"));
 smalltalk.bind(smalltalk.String.$klass, unescape("fromCharCode%3A"), "fromCharCode_", function String_class__fromCharCode_(anArrayOrNumber){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primFromCharCode(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("fromCharCode%3A%20anArrayOrNumber%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primFromCharCode%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3278,19 +3391,22 @@ const self = this; return "skDoIt";
 , "doIt", unescape("doItSelector%0D%09%22%20Return%20the%20selector%20to%20use%20for%20doIt%20evaluations.%0D%09Warning%3A%20this%20selector%20will%20not%20be%20dump%20on%20image%20nor%20change%20log%20expressions.%0D%09%22%0D%0D%09%5E%23skDoIt"));
 smalltalk.bind(smalltalk.String, unescape("%3D"), "_eq", function String___eq(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primEquals(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return false;
 }
 , "comparing", unescape("%3D%20anObject%0D%20%20%20%20%22%20Return%20true%20if%20the%20receiver%20is%20equal%20to%20anObject.%20%22%0D%0D%09%3Cprimitive%3A%27primEquals%27%20module%3A%27SKString%27%3E%0D%09%5Efalse.%20"));
 smalltalk.bind(smalltalk.String, unescape("size"), "size", function String__size(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primSize(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("size%0D%09%22%20Return%20the%20size%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSize%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("at%3A"), "at_", function String__at_(anIndex){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("at%3A%20anIndex%0D%09%22%20Return%20the%20receiver%20at%20anIndex.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAt%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3304,13 +3420,15 @@ const self = this; return (function(){var $1$; $1$ = self.at_(anIndex); if (nil.
 , "accessing", unescape("at%3A%20anIndex%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20receiver%20at%20anIndex%20position%20or%20the%20result%20of%20evaluating%20aBlock.%20%22%0D%0D%09%5E%28self%20at%3A%20anIndex%29%20ifNil%3A%20aBlock"));
 smalltalk.bind(smalltalk.String, unescape("do%3A"), "do_", function String__do_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("do%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20the%20contents%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primDo%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("detect%3AifNone%3A"), "detect_ifNone_", function String__detect_ifNone_(aBlock,anotherBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primDetectIfNone(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("detect%3A%20aBlock%20ifNone%3A%20anotherBlock%0D%09%22%20Return%20the%20object%20in%20the%20receiver%20that%20return%20true%20when%20evaluated%20with%20aBlock%20or%20the%20result%20of%20evaluating%20anotherBlock.%20%22%0D%0D%09%3Cprimitive%3A%27primDetectIfNone%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3320,7 +3438,8 @@ const self = this; return (self.indexOf_(anObject))._gt((0));
 , "testing", unescape("includes%3A%20anObject%0D%09%22%20Return%20true%20if%20anObject%20is%20in%20receiver%27s%20contents.%20%22%0D%0D%09%5E%28self%20indexOf%3A%20anObject%29%20%3E%200"));
 smalltalk.bind(smalltalk.String, unescape("withIndexDo%3A"), "withIndexDo_", function String__withIndexDo_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primWithIndexDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("withIndexDo%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20all%20the%20index%20positions%20in%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primWithIndexDo%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3352,7 +3471,8 @@ const self = this; return self.printString();
 , "converting", unescape("asLiteral%0D%09%22%20Return%20the%20receiver%20in%20literal%20notation.%20%22%0D%0D%09%5Eself%20printString"));
 smalltalk.bind(smalltalk.String, unescape("primMatch%3A"), "primMatch_", function String__primMatch_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primMatch(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("primMatch%3A%20aString%0D%09%22%20Return%20the%20list%20of%20matches%20in%20the%20receiver%22%0D%0D%09%3Cprimitive%3A%20%27primMatch%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3381,13 +3501,15 @@ const self = this; return self.beginsWith_(aString);
 , "testing", unescape("startsWith%3A%20aString%0D%09%22%20Returns%20true%20if%20the%20receiver%20begins%20with%20the%20characters%20of%20aString.%20%22%0D%0D%09%5Eself%20beginsWith%3A%20aString"));
 smalltalk.bind(smalltalk.String, unescape("escaped"), "escaped", function String__escaped(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primEscaped(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("escaped%0D%09%22%20Return%20the%20receiver%20with%20escape%20codes.%20%22%0D%0D%09%3Cprimitive%3A%20%27primEscaped%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("unescaped"), "unescaped", function String__unescaped(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primUnescaped(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("unescaped%0D%09%22%20Return%20the%20receiver%20from%20escape%20codes.%20%22%0D%0D%09%3Cprimitive%3A%20%27primUnescaped%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3400,13 +3522,15 @@ return (unescape("unescape%28%22")._comma(escaped))._comma(unescape("%22%29"));
 , "converting", unescape("escapedCode%0D%09%22%20Return%20the%20code%20to%20reproduce%20receiver%20from%20%28javascript%29%20code.%20%22%0D%0D%09%7C%20escaped%20%7C%0D%09escaped%20%3A%3D%20self%20escaped.%0D%09escaped%20%3D%20self%20ifTrue%3A%20%5B%20%5E%24%22%20%2Cescaped%20%2C%24%22%20%5D.%0D%09%5E%27unescape%28%22%27%20%2Cescaped%20%2C%27%22%29%27"));
 smalltalk.bind(smalltalk.String, unescape("asEncodedURI"), "asEncodedURI", function String__asEncodedURI(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primURIEncode(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asEncodedURI%0D%09%22%20Return%20the%20receiver%20encoded%20as%20an%20URI%20component.%0D%09Encodes%20special%20characters%20and%20it%20encodes%20the%20following%20characters%3A%20%2C%20/%20%3F%20%3A%20@%20%26%20%3D%20+%20%24%20%23%22%0D%0D%09%3Cprimitive%3A%20%27primURIEncode%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("asDecodedURI"), "asDecodedURI", function String__asDecodedURI(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primURIDecode(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asDecodedURI%0D%09%22%20Return%20the%20receiver%20decoded%20as%20an%20URI%20component.%20%22%0D%0D%09%3Cprimitive%3A%20%27primURIDecode%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3420,7 +3544,8 @@ const self = this; return smalltalk.Association.key_value_((self.asArrayOfSubstr
 , "converting", unescape("--%3E%20anObject%0D%09%22%20Return%20a%20far-association%20of%20the%20receiver%20to%20anObject.%20%22%0D%0D%09%5EAssociation%20key%3A%20%28self%20asArrayOfSubstringsSeparatedBy%3A%20%24.%29%20value%3A%20anObject"));
 smalltalk.bind(smalltalk.String, unescape("%2C"), "_comma", function String___comma(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primConcat(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "copying", unescape("%2C%20aString%0D%09%22%20Return%20a%20copy%20of%20the%20receiver%20with%20aString%20appended.%20%22%0D%0D%09%3Cprimitive%3A%27primConcat%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3430,13 +3555,15 @@ const self = this; return self._comma(aString);
 , "copying", unescape("+%20aString%0D%0D%09%5Eself%2C%20aString"));
 smalltalk.bind(smalltalk.String, unescape("copyWith%3A"), "copyWith_", function String__copyWith_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primCopyWith(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "copying", unescape("copyWith%3A%20anObject%0D%09%22%20Return%20a%20copy%20of%20the%20receiver%20with%20anObject.%20%22%0D%0D%09%3Cprimitive%3A%20%27primCopyWith%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("copyFrom%3Ato%3A"), "copyFrom_to_", function String__copyFrom_to_(anIndex,anotherIndex){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primCopyFromTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "copying", unescape("copyFrom%3A%20anIndex%20to%3A%20anotherIndex%0D%09%22%20Return%20the%20receiver%20between%20limits.%20%22%0D%0D%09%3Cprimitive%3A%27primCopyFromTo%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3460,7 +3587,8 @@ return result;
 , "copying", unescape("reversed%0D%09%22%20Return%20a%20string%20with%20the%20contents%20of%20the%20receiver%20in%20reverse%20order.%20%22%0D%0D%09%7C%20result%20%7C%0D%09result%20%3A%3D%20%27%27.%0D%09self%20reverseDo%3A%20%5B%3Ac%7C%20result%20%3A%3D%20result%20%2C%20c%20%5D.%0D%09%5Eresult"));
 smalltalk.bind(smalltalk.String, unescape("indexOf%3A"), "indexOf_", function String__indexOf_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primIndexOf(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("indexOf%3A%20aString%0D%09%22%20Return%20the%20position%20of%20first%20occurrence%20of%20aString%20%28or%200%20if%20not%20present%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primIndexOf%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3472,13 +3600,15 @@ if ((result._eq((0))).valueOf()) {return aBlock.value()} else {return result};
 , "accessing", unescape("indexOf%3A%20aString%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20position%20of%20first%20occurrence%20of%20aString%20%28or%20the%20result%20of%20evaluating%20aBlock%29.%20%22%0D%0D%09%7C%20result%20%7C%0D%09result%20%3A%3D%20self%20indexOf%3A%20aString.%0D%09%5Eresult%20%3D%200%20ifTrue%3A%20aBlock%20ifFalse%3A%20%5B%20result%20%5D"));
 smalltalk.bind(smalltalk.String, unescape("indexOf%3AstartingAt%3A"), "indexOf_startingAt_", function String__indexOf_startingAt_(aString,position){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primIndexOfStartingAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("indexOf%3A%20aString%20startingAt%3A%20position%0D%09%22%20Return%20the%20position%20of%20first%20occurrence%20of%20aString%20after%20position%20%28or%200%20if%20not%20present%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primIndexOfStartingAt%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed."));
 smalltalk.bind(smalltalk.String, unescape("lastIndexOf%3A"), "lastIndexOf_", function String__lastIndexOf_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primLastIndexOf(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("lastIndexOf%3A%20aString%0D%09%22%20Return%20the%20position%20of%20last%20occurrence%20of%20aString%20%28or%200%20if%20not%20present%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primLastIndexOf%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3490,7 +3620,8 @@ if ((result._eq((0))).valueOf()) {return aBlock.value()} else {return result};
 , "accessing", unescape("lastIndexOf%3A%20aString%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20position%20of%20last%20occurrence%20of%20aString%20%28or%20the%20result%20of%20evaluating%20aBlock%29.%20%22%0D%0D%09%7C%20result%20%7C%0D%09result%20%3A%3D%20self%20lastIndexOf%3A%20aString.%0D%09%5Eresult%20%3D%200%20ifTrue%3A%20aBlock%20ifFalse%3A%20%5B%20result%20%5D"));
 smalltalk.bind(smalltalk.String, unescape("lastIndexOf%3AstartingAt%3A"), "lastIndexOf_startingAt_", function String__lastIndexOf_startingAt_(aString,position){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primLastIndexOfStartingAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("lastIndexOf%3A%20aString%20startingAt%3A%20position%0D%09%22%20Return%20the%20position%20of%20last%20occurrence%20of%20aString%20before%20position%20%28or%200%20if%20not%20present%29.%20%22%0D%0D%09%3Cprimitive%3A%20%27primLastIndexOfStartingAt%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3553,19 +3684,22 @@ return self;
 , "converting", unescape("asJavascriptName%0D%09%22%20Private%20-%20Return%20the%20receiver%20as%20a%20valid%20javascript%20name.%20%22%0D%0D%09self%20first%20%3D%20%24_%20ifTrue%3A%20%5B%20%5Eself%20%5D.%0D%09%28String%20reservedWords%20includes%3A%20self%29%20ifTrue%3A%20%5B%20%5E%27%24%24%27%2Cself%20%5D.%0D%09%5Eself"));
 smalltalk.bind(smalltalk.String, unescape("asSelector"), "asSelector", function String__asSelector(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAsSelector(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asSelector%0D%09%22Private%20-%20Return%20the%20receiver%20as%20a%20valid%20javascript%20selector.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsSelector%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("asJavascript"), "asJavascript", function String__asJavascript(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAsJavascript(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asJavascript%0D%09%22%20Return%20the%20javascript%20representation%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primAsJavascript%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("replace%3Awith%3A"), "replace_with_", function String__replace_with_(aString,anotherString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primReplaceWith(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "regular expressions", unescape("replace%3A%20aString%20with%3A%20anotherString%0D%09%22%20Return%20the%20result%20of%20replacement%20of%20aString%20with%20anotherString%20in%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primReplaceWith%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3575,7 +3709,8 @@ const self = this; return self.replace_with_(aString,otherString);
 , "regular expressions", unescape("replaceAll%3A%20aString%20with%3A%20otherString%0D%09%22%20Return%20the%20result%20of%20replacement%20of%20aString%20with%20anotherString%20in%20the%20receiver.%20%22%0D%0D%09%5Eself%0D%09%09replace%3A%20aString%0D%09%09with%3A%20otherString"));
 smalltalk.bind(smalltalk.String, unescape("replaceRegexp%3Awith%3A"), "replaceRegexp_with_", function String__replaceRegexp_with_(aRegexp,aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primReplaceRegExp(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; var $early={name:"stReturn"};
 try {
 (aRegexp.isRegExp()).ifFalse_ifFalse_((((function String__(){
@@ -3598,7 +3733,8 @@ const self = this; return self.stream();
 , "coverting", unescape("asStream%0D%09%22Answer%20the%20receiver%20as%20a%20Stream.%22%0D%0D%09%5Eself%20stream"));
 smalltalk.bind(smalltalk.String, unescape("tokenize%3A"), "tokenize_", function String__tokenize_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primTokenize(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("tokenize%3A%20aString%0D%09%22%20Return%20the%20split%20tokenization%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primTokenize%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3624,7 +3760,8 @@ const self = this; return self.tokenize_(aCharacter);
 , "converting", unescape("asArrayOfSubstringsSeparatedBy%3A%20aCharacter%0D%09%22%20Return%20an%20array%20of%20substrings%20from%20the%20receiver.%0D%09The%20receiver%20is%20divided%20into%20substrings%20by%20one%20or%20more%20occurrences%20of%20aCharacter.%0D%09%22%0D%0D%09%5Eself%20tokenize%3A%20aCharacter"));
 smalltalk.bind(smalltalk.String, unescape("match%3A"), "match_", function String__match_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primMatchRegExp(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "regular expressions", unescape("match%3A%20aString%0D%09%22%20Return%20the%20whether%20a%20string%20matches.%20%22%0D%0D%09%3Cprimitive%3A%20%27primMatchRegExp%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3641,13 +3778,15 @@ return self._lt_eq(max);
 , "testing", unescape("between%3A%20min%20and%3A%20max%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20greater%20than%20or%20equal%20to%20min%20and%20less%20than%20or%20equal%20to%20max.%20%22%0D%0D%09%5Emin%20%3C%3D%20self%20and%3A%20%5B%20self%20%3C%3D%20max%20%5D"));
 smalltalk.bind(smalltalk.String, unescape("isLetter"), "isLetter", function String__isLetter(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primIsLetter(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("isLetter%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20a%20one%20character%20letter.%20%22%0D%0D%09%3Cprimitive%3A%20%27primIsLetter%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("isDigit"), "isDigit", function String__isDigit(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primIsDigit(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("isDigit%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20one%20character%20numeric%20digit.%20%22%0D%0D%09%3Cprimitive%3A%20%27primIsDigit%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3680,7 +3819,8 @@ const self = this; return (self.indexOf_(aString))._gt((0));
 , "testing", unescape("includesSubstring%3A%20aString%0D%0D%09%5E%28self%20indexOf%3A%20aString%29%20%3E%200"));
 smalltalk.bind(smalltalk.String, unescape("asUppercase"), "asUppercase", function String__asUppercase(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAsUppercase(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asUppercase%0D%09%22%20Return%20a%20copy%20of%20the%20receiver%20converted%20to%20uppercase.%20%22%0D%0D%09%3Cprimitive%3A%27primAsUppercase%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3690,7 +3830,8 @@ const self = this; return self.asUppercase();
 , "converting", unescape("asUpperCase%0D%09%22%20Return%20a%20copy%20of%20the%20receiver%20converted%20to%20uppercase.%20%22%0D%0D%09%5Eself%20asUppercase"));
 smalltalk.bind(smalltalk.String, unescape("asLowercase"), "asLowercase", function String__asLowercase(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAsLowercase(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "converting", unescape("asLowercase%0D%09%22%20Return%20a%20copy%20of%20the%20receiver%20converted%20to%20lowercase.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsLowercase%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3737,7 +3878,8 @@ const self = this; return (("0123456789ABCDEF".indexOf_(self))._minus((1))).max_
 , "converting", unescape("digitValue%0D%09%22%20Return%20the%20digit%20value%20of%20the%20receiver%20%28or%20-1%29.%20%22%0D%0D%09%5E%28%270123456789ABCDEF%27%20indexOf%3A%20self%29%20-%201%20max%3A%200%20-%201"));
 smalltalk.bind(smalltalk.String, unescape("asNumber"), "asNumber", function String__asNumber(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAsNumber(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((self.includes_("r")).valueOf()) {return smalltalk.Number.readFrom_((self.readStream()))};
 return self.primitiveFailed();
 }
@@ -3767,25 +3909,29 @@ const self = this; return self._eq(unescape("%5C"));
 , "testing", unescape("isBackSlash%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20a%20back-slash%20string.%20%22%0D%0D%09%5Eself%20%3D%20%24%5C%20"));
 smalltalk.bind(smalltalk.String, unescape("%3E"), "_gt", function String___gt(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primGreaterThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3E%20aString%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20greater%20than%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGreaterThan%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("%3C"), "_lt", function String___lt(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primLessThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3C%20aString%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20smaller%20than%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primLessThan%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("%3E%3D"), "_gt_eq", function String___gt_eq(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primGreaterThanEqualTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3E%3D%20aString%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20greater%20than%20or%20equal%20to%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primGreaterThanEqualTo%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("%3C%3D"), "_lt_eq", function String___lt_eq(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primLessThanEqualTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "comparing", unescape("%3C%3D%20aString%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20smaller%20than%20or%20equal%20to%20aString.%20%22%0D%0D%09%3Cprimitive%3A%27primLessThanEqualTo%27%20module%3A%27SKString%27%3E%0D%09%5Eself%20primitiveFailed."));
@@ -3811,13 +3957,15 @@ const self = this; return (self.size())._eq((1));
 , "testing", unescape("isCharacter%0D%09%22%20Characters%20-%20Implemented%20to%20support%20Character%20protocoll%20for%20one-character%20Strings.%20%22%0D%0D%09%5Eself%20size%20%3D%201%20"));
 smalltalk.bind(smalltalk.String, unescape("asciiValue"), "asciiValue", function String__asciiValue(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primAsciiValue(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("asciiValue%0D%09%22%20Characters%20-%20Return%20the%20number%20corresponding%20to%20the%20ASCII%20encoding%20of%20the%20first%20character%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAsciiValue%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.String, unescape("isSeparator"), "isSeparator", function String__isSeparator(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKString.primIsSeparator(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "testing", unescape("isSeparator%0D%09%22%20Return%20true%20if%20the%20receiver%20character%20is%20either%20a%20space%2C%20tab%2C%20carriage-return%2C%20line-feed%2C%20form-feed%20character%2C%20or%20double-byte%20space%2C%20else%20answer%20false.%22%0D%0D%09%3Cprimitive%3A%20%27primIsSeparator%27%20module%3A%20%27SKString%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3890,7 +4038,8 @@ const self = this; return [];
 , "instantiation", unescape("new%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%5E%23%28%29"));
 smalltalk.bind(smalltalk.Array.$klass, unescape("basicNew%3A"), "basicNew_", function Array_class__basicNew_(size){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primBasicNew(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("basicNew%3A%20size%0D%09%22%20Return%20an%20instance%20of%20the%20receiver%20of%20specified%20size.%20%22%0D%0D%09%3Cprimitive%3A%20%27primBasicNew%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3947,31 +4096,36 @@ return arr;
 , "instantiation", unescape("with%3A%20firstObject%20with%3A%20secondObject%20with%3A%20thirdObject%20with%3A%20fourthObject%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%7C%20arr%20%7C%0D%09arr%20%3A%3D%20self%20basicNew%3A%204.%0D%09arr%20at%3A%201%20put%3A%20firstObject.%0D%09arr%20at%3A%202%20put%3A%20secondObject.%0D%09arr%20at%3A%203%20put%3A%20thirdObject.%0D%09arr%20at%3A%204%20put%3A%20fourthObject.%0D%09%5Earr.%20"));
 smalltalk.bind(smalltalk.Array, unescape("size"), "size", function Array__size(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primSize(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("size%0D%09%22%20Return%20the%20size%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSize%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("at%3Aput%3A"), "at_put_", function Array__at_put_(anIndex,anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAtPut(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("at%3A%20anIndex%20put%3A%20anObject%0D%09%22%20Set%20the%20contents%20of%20the%20receiver%20at%20anIndex.%20%22%0D%0D%09%3Cprimitive%3A%27primAtPut%27%20module%3A%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("at%3A"), "at_", function Array__at_(anIndex){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("at%3A%20anIndex%0D%09%22%20Return%20the%20contents%20of%20the%20receiver%20at%20anIndex.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAt%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("at%3AifAbsent%3A"), "at_ifAbsent_", function Array__at_ifAbsent_(anIndex,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAtIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("at%3A%20anIndex%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20contents%20of%20the%20receiver%20at%20anIndex%20or%20the%20result%20of%20evaluating%20aBlock.%20%22%0D%0D%09%3Cprimitive%3A%27primAtIfAbsent%27%20module%3A%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("do%3A"), "do_", function Array__do_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("do%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20the%20contents%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primDo%27%20module%3A%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -3981,14 +4135,16 @@ const self = this; return (nil.is_eqeq_(self.$klass,smalltalk.Array));
 , "testing", unescape("isArray%0D%09%22%20Return%20true%20if%20the%20receiver%20is%20an%20Array.%20%22%0D%0D%09%5Eself%20class%20%3D%3D%20Array"));
 smalltalk.bind(smalltalk.Array, unescape("addAll%3A"), "addAll_", function Array__addAll_(aCollection){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAddAll(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aCollection.isCollection()).valueOf()) {return self.addAll_((aCollection.asArray()))};
 return self.primitiveFailed();
 }
 , "adding", unescape("addAll%3A%20aCollection%0D%09%22%20Add%20objects%20in%20aCollection%20to%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primAddAll%27%20module%3A%27SKArray%27%3E%0D%09aCollection%20isCollection%20ifTrue%3A%5B%5Eself%20addAll%3A%20aCollection%20asArray%5D.%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("shallowCopy"), "shallowCopy", function Array__shallowCopy(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primShallowCopy(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "copying", unescape("shallowCopy%0D%09%22%20Return%20a%20shallow%20copy%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primShallowCopy%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4011,7 +4167,8 @@ return result;
 , "copying", unescape("copyFrom%3A%20anIndex%20to%3A%20anotherIndex%0D%09%22%20Return%20the%20receiver%20contents%20in%20the%20interval.%20%22%0D%0D%09%7C%20result%20%7C%0D%09result%20%3A%3D%20self%20class%20new.%0D%09anIndex%20to%3A%20anotherIndex%20do%3A%20%5B%3Aeach%20%7C%20result%20add%3A%20%28self%20at%3A%20each%29%20%5D.%0D%09%5Eresult"));
 smalltalk.bind(smalltalk.Array, unescape("copyWithAll%3A"), "copyWithAll_", function Array__copyWithAll_(aCollection){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primCopyWithAll(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; if ((aCollection.isCollection()).valueOf()) {return self.copyWithAll_((aCollection.asArray()))};
 return self.primitiveFailed();
 }
@@ -4022,7 +4179,8 @@ const self = this; return self.copyWithAll_(aCollection);
 , "copying", unescape("%2C%20aCollection%0D%09%22%20Return%20a%20copy%20of%20the%20receiver%20with%20all%20contents%20of%20aCollection.%20%22%0D%0D%09%5Eself%20copyWithAll%3A%20aCollection.%20"));
 smalltalk.bind(smalltalk.Array, unescape("join%3A"), "join_", function Array__join_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primJoin(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("join%3A%20aString%0D%09%22%20Return%20a%20string%20with%20the%20receiver%27s%20contents%20separated%20by%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primJoin%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4035,7 +4193,8 @@ return each.asJavascript();
 , "converting", unescape("asJavascript%0D%09%22%20Return%20the%20javascript%20representation%20of%20the%20receiver.%20%22%0D%0D%09%5E%27%5B%27%2C%20%28%28self%20collect%3A%20%5B%3Aeach%20%7C%20each%20asJavascript%5D%29%20join%3A%20%27%2C%20%27%29%2C%20%20%27%5D%27"));
 smalltalk.bind(smalltalk.Array, unescape("sort%3A"), "sort_", function Array__sort_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primSort(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "sorting", unescape("sort%3A%20aBlock%0D%09%22%20Sort%20%28inplace%29%20the%20receiver%27s%20contents%20with%20aBlock.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSort%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4045,7 +4204,8 @@ const self = this; return self;
 , "converting", unescape("asArray%0D%09%22%20Return%20an%20array%20with%20the%20contents%20of%20the%20receiver.%20%22%0D%0D%09%5Eself"));
 smalltalk.bind(smalltalk.Array, unescape("remove%3AifAbsent%3A"), "remove_ifAbsent_", function Array__remove_ifAbsent_(anObject,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primRemoveIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "removing", unescape("remove%3A%20anObject%20ifAbsent%3A%20aBlock%0D%09%22%20Remove%20anObject%20from%20the%20receiver.%0D%09Return%20the%20result%20of%20evaluating%20aBlock%20if%20anObject%20is%20not%20in%20the%20receiver.%22%0D%09%0D%09%3Cprimitive%3A%27primRemoveIfAbsent%27%20module%3A%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4055,13 +4215,15 @@ const self = this; return self.addLast_(anObject);
 , "adding", unescape("add%3A%20anObject%0D%09%22%20Add%20anObject%20to%20the%20receiver.%20%22%0D%0D%09%5Eself%20addLast%3A%20anObject.%20"));
 smalltalk.bind(smalltalk.Array, unescape("addLast%3A"), "addLast_", function Array__addLast_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAddLast(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "adding", unescape("addLast%3A%20anObject%0D%09%22%20Add%20anObject%20to%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primAddLast%27%20module%3A%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("addFirst%3A"), "addFirst_", function Array__addFirst_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAddFirst(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "adding", unescape("addFirst%3A%20anObject%0D%09%22%20Add%20anObject%20to%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primAddFirst%27%20module%3A%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4071,19 +4233,22 @@ const self = this; return self.pop();
 , "removing", unescape("removeLast%0D%09%22%20Remove%20the%20last%20object%20in%20the%20receiver.%20%22%0D%0D%09%5Eself%20pop"));
 smalltalk.bind(smalltalk.Array, unescape("removeFirst"), "removeFirst", function Array__removeFirst(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primRemoveFirst(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "removing", unescape("removeFirst%0D%09%22%20Remove%20the%20first%20object%20in%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primRemoveFirst%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("removeAll"), "removeAll", function Array__removeAll(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primRemoveAll(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "removing", unescape("removeAll%0D%09%22%20Remove%20all%20the%20objects%20in%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primRemoveAll%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.Array, unescape("removeIndex%3A"), "removeIndex_", function Array__removeIndex_(index){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primRemoveIndex(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "removing", unescape("removeIndex%3A%20index%0D%09%22%20Remove%20the%20element%20at%20index.%20%22%0D%0D%09%3Cprimitive%3A%20%27primRemoveIndex%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4097,7 +4262,8 @@ const self = this; return (self.copy()).sort_(aBlock);
 , "sorting", unescape("sorted%3A%20aBlock%0D%09%22%20Return%20a%20sorted%20copy%20of%20the%20receiver.%20%22%0D%0D%09%5Eself%20copy%20sort%3A%20aBlock"));
 smalltalk.bind(smalltalk.Array, unescape("atAllPut%3A"), "atAllPut_", function Array__atAllPut_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primAtAllPut(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("atAllPut%3A%20anObject%0D%09%22%20Replace%20all%20elements%20of%20the%20receiver%20with%20anObject.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAtAllPut%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4123,7 +4289,8 @@ const self = this; return self.polyAt_((4));
 , "accessing", unescape("fourth%0D%09%22%20Return%20the%20object%20in%20the%20receiver.%20%22%0D%0D%09%5Eself%20polyAt%3A%204"));
 smalltalk.bind(smalltalk.Array, unescape("withIndexDo%3A"), "withIndexDo_", function Array__withIndexDo_(aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKArray.primWithIndexDo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "enumerating", unescape("withIndexDo%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20with%20all%20the%20index%20positions%20in%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primWithIndexDo%27%20module%3A%20%27SKArray%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4190,25 +4357,29 @@ const self = this; return true;
 , "accessing", unescape("isRegExp%0D%0D%09%5Etrue%20"));
 smalltalk.bind(smalltalk.RegularExpression, unescape("compile%3A"), "compile_", function RegularExpression__compile_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKRegularExpression.primCompile(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("compile%3A%20aString%0D%09%22%20Return%20the%20result%20of%20compilation%20of%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primCompile%27%20module%3A%20%27SKRegularExpression%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.RegularExpression, unescape("exec%3A"), "exec_", function RegularExpression__exec_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKRegularExpression.primExec(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("exec%3A%20aString%0D%09%22%20Return%20the%20result%20of%20excecution%20of%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primExec%27%20module%3A%20%27SKRegularExpression%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.RegularExpression, unescape("test%3A"), "test_", function RegularExpression__test_(aString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKRegularExpression.primTest(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "evaluating", unescape("test%3A%20aString%0D%09%22%20Return%20the%20result%20of%20testing%20of%20aString.%20%22%0D%0D%09%3Cprimitive%3A%20%27primTest%27%20module%3A%20%27SKRegularExpression%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.RegularExpression.$klass, unescape("fromString%3Aflag%3A"), "fromString_flag_", function RegularExpression_class__fromString_flag_(aString,anotherString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKRegularExpression.primFromString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "instantiation", unescape("fromString%3A%20aString%20flag%3A%20anotherString%0D%09%22%20Return%20an%20instance%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primFromString%27%20module%3A%27SKRegularExpression%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -4254,7 +4425,8 @@ return self;
 , "accessing", unescape("messageText%3A%20aString%0D%09%22%20set%20the%20messageText%20of%20the%20receiver.%20%22%0D%0D%09messageText%20%3A%3D%20aString"));
 smalltalk.bind(smalltalk.Exception, unescape("signal"), "signal", function Exception__signal(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKException.primSignal(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "signaling", unescape("signal%0D%09%22%20Signal/throw%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primSignal%27%20module%3A%20%27SKException%27%3E%0D%09%5Eself%20primitiveFailed%20"));
@@ -4523,7 +4695,8 @@ return each.isEmpty();
 , "private", unescape("instanceVariableNamesFor%3A%20aString%0D%09%22%20Private%20-%20Return%20the%20instance%20variable%20names%20string.%20%22%0D%0D%09%5E%28aString%20tokenize%3A%20%27%20%27%29%20reject%3A%20%5B%3Aeach%20%7C%20each%20isEmpty%20%5D"));
 smalltalk.bind(smalltalk.ClassBuilder, unescape("addSubclassOf%3Anamed%3AinstanceVariableNames%3A"), "addSubclassOf_named_instanceVariableNames_", function ClassBuilder__addSubclassOf_named_instanceVariableNames_(aClass,aString,aCollection){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKClassBuilder.primAddSubclassOfNamedInstanceVariableNames(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "private", unescape("addSubclassOf%3A%20aClass%20named%3A%20aString%20instanceVariableNames%3A%20aCollection%0D%09%22%20Private%20-%20Add%20the%20subclass%20to%20system.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAddSubclassOfNamedInstanceVariableNames%27%20module%3A%20%27SKClassBuilder%27%3E%0D%09%5Eself%20primitiveFailed%20"));
@@ -4963,7 +5136,8 @@ smalltalk.addClass("Random", smalltalk.Object, [], 'Kernel');
 smalltalk.Random.$classVariableNames=("");
 smalltalk.bind(smalltalk.Random, unescape("next"), "next", function Random__next(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKNumber.primRandom(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -5509,7 +5683,8 @@ return true;
 , "reading", unescape("peekForAll%3A%20aCollection%0D%09%22%20Return%20true%20if%20the%20next%20readable%20elements%20from%20the%20receiver%20matches%20aCollection.%0D%09Advance%20the%20receiver%20if%20the%20result%20is%20true.%0D%09%22%0D%0D%09%7C%20back%20%7C%0D%09back%20%3A%3D%20self%20position.%0D%09aCollection%20do%3A%20%5B%3Aeach%7C%0D%09%09%28self%20peekFor%3A%20each%29%20ifFalse%3A%20%5B%0D%09%09%09self%20position%3A%20back.%0D%09%09%09%5Efalse%0D%09%09%5D.%0D%09%5D.%0D%09%5Etrue"));
 smalltalk.bind(smalltalk.StringStream, unescape("peekForAll%3A"), "peekForAll_", function StringStream__peekForAll_(aCollection){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKStream.primStringPeekForAll(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return smalltalk.superImplementor(smalltalk.StringStream,'peekForAll_').apply(self, [aCollection]);
 }
 , "reading", unescape("peekForAll%3A%20aCollection%0D%09%22Return%20true%20if%20the%20next%20readable%20elements%20from%20the%20receiver%20matches%20aCollection.%0D%09Advance%20the%20receiver%20if%20the%20result%20is%20true.%22%0D%0D%09%3Cprimitive%3A%20%27primStringPeekForAll%27%20module%3A%20%27SKStream%27%3E%0D%09%5Esuper%20peekForAll%3A%20aCollection"));

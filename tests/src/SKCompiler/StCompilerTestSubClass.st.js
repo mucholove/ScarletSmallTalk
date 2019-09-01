@@ -64,3 +64,6 @@ self['@classInstVar3']=nil;
 return self;
 }
 , "class initialization", unescape("tearDown%0D%09ClassVar4%20%3A%3D%20nil.%0D%09classInstVar3%20%3A%3D%20nil"));
+
+/*StCompilerTestSubClass initialize*/
+smalltalk.StCompilerTestSubClass.initialize();
