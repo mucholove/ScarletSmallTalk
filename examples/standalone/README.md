@@ -2,6 +2,9 @@
 
 The standalone example adds a simple class and a doIt to the runtime.
 
+Thanks to Alexandre Bergel for the MyApp example!
+
+
 ```
 
 Object 
