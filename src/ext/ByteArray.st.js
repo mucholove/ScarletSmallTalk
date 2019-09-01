@@ -27,7 +27,8 @@ return $1$.yourself()}
 , "instance creation", unescape("new%3A%20aByteCount%0D%0D%09%5Eself%20basicNew%0D%09%09initialize%3A%20aByteCount%3B%0D%09%09yourself"));
 smalltalk.bind(smalltalk.ByteArray, unescape("initializeStorage%3A"), "initializeStorage_", function ByteArray__initializeStorage_(aByteCount){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primInitializeStorage(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -42,7 +43,8 @@ return self;
 , "initializing", unescape("initialize%3A%20aByteCount%0D%0D%09self%0D%09%09initialize%3B%0D%09%09initializeStorage%3A%20aByteCount"));
 smalltalk.bind(smalltalk.ByteArray, unescape("size"), "size", function ByteArray__size(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primSize(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -143,14 +145,16 @@ const self = this; return self;
 , "", unescape("asByteArray%0D%09%22I%20am%20who%20I%20am%22%0D%0D%20%20%20%20%5Eself"));
 smalltalk.bind(smalltalk.ByteArray, unescape("at%3A"), "at_", function ByteArray__at_(anIndex){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primAt(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "", unescape("at%3A%20anIndex%0D%20%20%20%20%22return%20item%20at%20indexed%20zero%20based%20location%22%0D%0D%09%3Cprimitive%3A%20%27primAt%27%20module%3A%20%27SKByteArray%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.ByteArray, unescape("at%3Aput%3A"), "at_put_", function ByteArray__at_put_(anIndex,anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primAtPut(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -182,34 +186,39 @@ return reversed;
 , "", unescape("reversed%0D%09%22%20Return%20an%20array%20with%20the%20contents%20of%20the%20receiver%20in%20reverse%20order.%20%22%0D%0D%09%7C%20size%20reversed%20%7C%0D%09size%20%3A%3D%20self%20size.%0D%09reversed%20%3A%3D%20ByteArray%20new%3A%20size.%0D%09self%0D%09%09doWithIndex%3A%0D%09%09%09%5B%3Abyte%20%3Ai%20%7C%0D%09%09%09reversed%20at%3A%20%28size%20-%20i%20+%201%29%20put%3A%20byte%5D.%0D%09%5Ereversed"));
 smalltalk.bind(smalltalk.ByteArray, unescape("asString"), "asString", function ByteArray__asString(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primUTF8ToString(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "", unescape("asString%0D%09%22return%20as%20String%20object%22%0D%0D%09%3Cprimitive%3A%20%27primUTF8ToString%27%20module%3A%20%27SKByteArray%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.String, unescape("asByteArray"), "asByteArray", function String__asByteArray(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primAsByteArray(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "", unescape("asByteArray%0D%09%22Convert%20the%20string%20to%20a%20byte%20Array%22%0D%0D%09%3Cprimitive%3A%20%27primAsByteArray%27%20module%3A%20%27SKByteArray%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.String, unescape("asByteArrayWithNoEncoding"), "asByteArrayWithNoEncoding", function String__asByteArrayWithNoEncoding(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primAsByteArrayNoEncoding(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "", unescape("asByteArrayWithNoEncoding%0D%09%20%22Convert%20the%20string%20to%20a%20byte%20Array%22%0D%0D%09%20%3Cprimitive%3A%20%27primAsByteArrayNoEncoding%27%20module%3A%20%27SKByteArray%27%3E%0D%09%20self%20primitiveFailed"));
 smalltalk.bind(smalltalk.ByteArray.$klass, unescape("contents%3A"), "contents_", function ByteArray_class__contents_(aUint8Array){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primFromUint8Array(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "deprecated", unescape("contents%3A%20aUint8Array%0D%09%22This%20method%20is%20deprecated.%20Any%20primitive%20methods%20that%20need%20to%20return%20bytes%0D%09should%20return%20a%20ByteArray%20instance%20instead%20of%20a%20Uint8Array.%22%0D%0D%09%3Cprimitive%3A%20%27primFromUint8Array%27%20module%3A%20%27SKByteArray%27%3E%0D%09%5Eself%20primitiveFailed"));
 smalltalk.bind(smalltalk.ByteArray, unescape("contents"), "contents", function ByteArray__contents(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKByteArray.primContents(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "deprecated", unescape("contents%0D%0D%09%3Cprimitive%3A%20%27primContents%27%20module%3A%20%27SKByteArray%27%3E%0D%09%5Eself%20primitiveFailed"));

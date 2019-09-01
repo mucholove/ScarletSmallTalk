@@ -6,19 +6,22 @@ return self;
 , "initialize", unescape("initialize%0D%09%22%20Private%20-%20Initialize%20the%20receiver.%20%22%0D%0D%09super%20initialize.%0D%09self%20initializeHash.%20"));
 smalltalk.bind(smalltalk.PoolDictionary, unescape("initializeHash"), "initializeHash", function PoolDictionary__initializeHash(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKPoolDictionary.primInitializeHash(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "initialization", unescape("initializeHash%0D%0D%09%3Cprimitive%3A%20%27primInitializeHash%27%20module%3A%20%27SKPoolDictionary%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.PoolDictionary, unescape("at%3Aput%3A"), "at_put_", function PoolDictionary__at_put_(aKey,value){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKPoolDictionary.primAtPut(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("at%3A%20aKey%20put%3A%20value%0D%09%22%20Set%20the%20value%20at%20aKey%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%20%27primAtPut%27%20module%3A%20%27SKPoolDictionary%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
 smalltalk.bind(smalltalk.PoolDictionary, unescape("removeKey%3AifAbsent%3A"), "removeKey_ifAbsent_", function PoolDictionary__removeKey_ifAbsent_(aKey,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKPoolDictionary.primRemoveKeyIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "removing", unescape("removeKey%3A%20aKey%20ifAbsent%3A%20aBlock%0D%09%22%20Remove%20the%20binding%20at%20aKey.%20%22%0D%0D%09%3Cprimitive%3A%20%27primRemoveKeyIfAbsent%27%20module%3A%20%27SKPoolDictionary%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -29,7 +32,8 @@ return self['@size'];
 , "accessing", unescape("size%0D%09%22%20Return%20the%20size%20of%20the%20receiver.%20%22%0D%0D%09size%20isNil%20ifTrue%3A%20%5B%20size%20%3A%3D%20self%20keys%20size%20%5D.%0D%09%5Esize"));
 smalltalk.bind(smalltalk.PoolDictionary, unescape("at%3AifAbsent%3A"), "at_ifAbsent_", function PoolDictionary__at_ifAbsent_(aKey,aBlock){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKPoolDictionary.primAtIfAbsent(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("at%3A%20aKey%20ifAbsent%3A%20aBlock%0D%09%22%20Return%20the%20value%20at%20aKey%20or%20the%20result%20of%20evaluating%20aBlock.%20%22%0D%0D%09%3Cprimitive%3A%27primAtIfAbsent%27%20module%3A%27SKPoolDictionary%27%3E%0D%09%5Eself%20primitiveFailed.%20"));
@@ -66,7 +70,8 @@ return self;
 , "enumerating", unescape("keysAndValuesDo%3A%20aBlock%0D%09%22%20Evaluate%20aBlock%20for%20key/value%20pairs%20of%20the%20receiver.%20%22%0D%0D%09self%20keys%20do%3A%20%5B%3Akey%20%7C%20aBlock%20value%3A%20key%20value%3A%20%28self%20at%3A%20key%20ifAbsent%3A%20%5B%5Eself%20error%3A%20%27Key%20not%20found%20in%20dictionary%27%5D%29%20%5D"));
 smalltalk.bind(smalltalk.PoolDictionary, unescape("keys"), "keys", function PoolDictionary__keys(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKPoolDictionary.primKeys(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return self.primitiveFailed();
 }
 , "accessing", unescape("keys%0D%09%22%20Return%20the%20keys%20of%20the%20receiver.%20%22%0D%0D%09%3Cprimitive%3A%27primKeys%27%20module%3A%20%27SKPoolDictionary%27%3E%0D%09%5Eself%20primitiveFailed.%20"));

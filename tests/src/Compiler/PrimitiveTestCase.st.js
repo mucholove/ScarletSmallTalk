@@ -41,56 +41,64 @@ smalltalk.addClass("PrimitiveTestCase", smalltalk.TestCase, ['testValue'], 'Prim
 smalltalk.PrimitiveTestCase.$classVariableNames=("");
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("primReturnFortyTwo"), "primReturnFortyTwo", function PrimitiveTestCase__primReturnFortyTwo(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primReturnFortyTwo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primReturnFortyTwo%0D%0D%09%3Cprimitive%3A%20%27primReturnFortyTwo%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("primReturnReceiver"), "primReturnReceiver", function PrimitiveTestCase__primReturnReceiver(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primReturnReceiver(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primReturnReceiver%0D%0D%09%3Cprimitive%3A%20%27primReturnReceiver%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("primReturnNil"), "primReturnNil", function PrimitiveTestCase__primReturnNil(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primReturnNil(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primReturnNil%0D%0D%09%3Cprimitive%3A%20%27primReturnNil%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("zero"), "zero", function PrimitiveTestCase__zero(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primReturnArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("zero%0D%0D%09%3Cprimitive%3A%20%27primReturnArguments%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("one%3A"), "one_", function PrimitiveTestCase__one_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primReturnArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("one%3A%20anObject%0D%0D%09%3Cprimitive%3A%20%27primReturnArguments%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("one%3Atwo%3A"), "one_two_", function PrimitiveTestCase__one_two_(anObject,bObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primReturnArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("one%3A%20anObject%0Dtwo%3A%20bObject%0D%0D%09%3Cprimitive%3A%20%27primReturnArguments%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("primFail"), "primFail", function PrimitiveTestCase__primFail(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primFail(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self['@testValue']=self['@testValue']._plus((1));
 return self;
 }
 , "primitives", unescape("primFail%0D%0D%09%3Cprimitive%3A%20%27primFail%27%20module%3A%20%27PrimitiveTestModule%27%3E%0D%09testValue%20%3A%3D%20testValue%20+%201"));
 smalltalk.bind(smalltalk.PrimitiveTestCase, unescape("append%3Ato%3A"), "append_to_", function PrimitiveTestCase__append_to_(aString,anotherString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.PrimitiveTestModule.primAppendTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
@@ -162,56 +170,64 @@ smalltalk.addClass("NativeTestCase", smalltalk.PrimitiveTestCase, [], 'Primitive
 smalltalk.NativeTestCase.$classVariableNames=("");
 smalltalk.bind(smalltalk.NativeTestCase, unescape("primReturnFortyTwo"), "primReturnFortyTwo", function NativeTestCase__primReturnFortyTwo(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primReturnFortyTwo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primReturnFortyTwo%0D%0D%09%3Cprimitive%3A%20%27primReturnFortyTwo%27%20module%3A%20%27NativeTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("primReturnReceiver"), "primReturnReceiver", function NativeTestCase__primReturnReceiver(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primReturnReceiver(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primReturnReceiver%0D%0D%09%3Cprimitive%3A%20%27primReturnReceiver%27%20module%3A%20%27NativeTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("primReturnNil"), "primReturnNil", function NativeTestCase__primReturnNil(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primReturnNil(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("primReturnNil%0D%0D%09%3Cprimitive%3A%20%27primReturnNil%27%20module%3A%20%27NativeTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("zero"), "zero", function NativeTestCase__zero(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primReturnArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("zero%0D%0D%09%3Cprimitive%3A%20%27primReturnArguments%27%20module%3A%20%27NativeTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("one%3A"), "one_", function NativeTestCase__one_(anObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primReturnArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("one%3A%20anObject%0D%0D%09%3Cprimitive%3A%20%27primReturnArguments%27%20module%3A%20%27NativeTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("one%3Atwo%3A"), "one_two_", function NativeTestCase__one_two_(anObject,bObject){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primReturnArguments(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "primitives", unescape("one%3A%20anObject%0Dtwo%3A%20bObject%0D%0D%09%3Cprimitive%3A%20%27primReturnArguments%27%20module%3A%20%27NativeTestModule%27%3E%0D%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("primFail"), "primFail", function NativeTestCase__primFail(){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primFail(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self['@testValue']=self['@testValue']._plus((1));
 return self;
 }
 , "primitives", unescape("primFail%0D%0D%09%3Cprimitive%3A%20%27primFail%27%20module%3A%20%27NativeTestModule%27%3E%0D%09testValue%20%3A%3D%20testValue%20+%201"));
 smalltalk.bind(smalltalk.NativeTestCase, unescape("append%3Ato%3A"), "append_to_", function NativeTestCase__append_to_(aString,anotherString){
 var $$primitiveResult = smalltalk.primitiveManager.modules.NativeTestModule.primAppendTo(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }

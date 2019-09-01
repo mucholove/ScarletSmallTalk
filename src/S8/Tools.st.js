@@ -1,26 +1,30 @@
 smalltalk.bind(smalltalk.String, unescape("outputToFile%3A"), "outputToFile_", function String__outputToFile_(fileName){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKTools.primWriteToFile(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "Snapshot-io", unescape("outputToFile%3A%20fileName%0D%09%22%20Save%20the%20receiver%27s%20contents%20onto%20a%20file%20at%20fileName.%20%22%0D%0D%20%09%3Cprimitive%3A%20%27primWriteToFile%27%20module%3A%20%27SKTools%27%3E%0D%20%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.String, unescape("appendToFile%3A"), "appendToFile_", function String__appendToFile_(fileName){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKTools.primAppendToFile(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; self.primitiveFailed();
 return self;
 }
 , "Snapshot-io", unescape("appendToFile%3A%20fileName%0D%09%22%20Append%20the%20receiver%27s%20contents%20onto%20a%20file%20at%20fileName.%20%22%0D%0D%20%09%3Cprimitive%3A%20%27primAppendToFile%27%20module%3A%20%27SKTools%27%3E%0D%20%09self%20primitiveFailed"));
 smalltalk.bind(smalltalk.Object, unescape("isFile%3AolderThan%3A"), "isFile_olderThan_", function Object__isFile_olderThan_(fileName,referenceFileName){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKTools.primFileOlderThan(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return true;
 }
 , "Builders-emmiting", unescape("isFile%3A%20fileName%20olderThan%3A%20referenceFileName%0D%09%22Return%20true%20if%20the%20file%20at%20pathName%20is%20older%20than%20file%20at%20referenceFileName.%22%0D%20%09%3Cprimitive%3A%20%27primFileOlderThan%27%20module%3A%20%27SKTools%27%3E%0D%20%09%5Etrue"));
 smalltalk.bind(smalltalk.Object, unescape("fileContents%3A"), "fileContents_", function Object__fileContents_(fileName){
 var $$primitiveResult = smalltalk.primitiveManager.modules.SKTools.primFileContents(this, arguments);
-if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)		return $$primitiveResult;
+if ($$primitiveResult !== smalltalk.primitiveManager.primFailValue)
+		return $$primitiveResult;
 const self = this; return false;
 }
 , "Builders-emmiting", unescape("fileContents%3A%20fileName%0D%0D%20%09%3Cprimitive%3A%20%27primFileContents%27%20module%3A%20%27SKTools%27%3E%0D%20%09%5Efalse"));
@@ -133,12 +137,18 @@ return chunk.evaluateIn_(self);
 , "Tools-fileIn", unescape("scanFrom%3A%20aStream%0D%09%22%20FileIn%20-%20Return%20the%20result%20of%20evaluating%20the%20next%20chunk%20of%20data%20from%20aStream.%0D%09The%20method%20can%20be%20refined%20by%20chunk%20readers%20to%20support%20custom%20fileIn%20features.%0D%09Must%20return%20the%20next%20reader%20to%20use%20for%20reading%20remaining%20contents%20from%20aStream.%0D%09%22%0D%0D%09%7C%20chunk%20%7C%0D%09chunk%20%3A%3D%20aStream%20nextChunk.%0D%09chunk%20isEmpty%20ifTrue%3A%20%5B%20%5Enil%20%5D.%0D%09%5Echunk%20evaluateIn%3A%20self"));
 smalltalk.addClass("FileInReader", smalltalk.Object, [], 'nil');
 smalltalk.FileInReader.$classVariableNames=("");
+
+/*FileInReader comment: '	Perform sequential reading from aStream in chunk format.	Instances implement #scanFrom: message, advancing aStream upto next reader instantiation chunk.'*/
+smalltalk.FileInReader.comment_(unescape("%0D%09Perform%20sequential%20reading%20from%20aStream%20in%20chunk%20format.%0D%09Instances%20implement%20%23scanFrom%3A%20message%2C%20advancing%20aStream%20upto%20next%20reader%20instantiation%20chunk."));
 smalltalk.bind(smalltalk.FileInReader, unescape("scanFrom%3A"), "scanFrom_", function FileInReader__scanFrom_(aStream){
 const self = this; return self.subclassResponsibility_("scanFrom:");
 }
 , "fileIn", unescape("scanFrom%3A%20aStream%0D%09%22%20FileIn%20-%20Return%20the%20result%20of%20evaluating%20the%20next%20chunk%20of%20data%20from%20aStream.%0D%09The%20method%20must%20be%20implemented%20by%20chunk%20readers%20to%20support%20custom%20fileIn%20features.%0D%09%22%0D%0D%09%5Eself%20subclassResponsibility%3A%20%23scanFrom%3A"));
 smalltalk.addClass("ChunkReader", smalltalk.FileInReader, ['actionBlock', 'terminationBlock'], 'Tools-FileIn');
 smalltalk.ChunkReader.$classVariableNames=("");
+
+/*ChunkReader comment: '	Pluggable FileInReader.	actionBlock is evaluated with input stream as argument.	Read chunks until empty chunk, terminationBlock is nil or evaluates to true.'*/
+smalltalk.ChunkReader.comment_(unescape("%0D%09Pluggable%20FileInReader.%0D%09actionBlock%20is%20evaluated%20with%20input%20stream%20as%20argument.%0D%09Read%20chunks%20until%20empty%20chunk%2C%20terminationBlock%20is%20nil%20or%20evaluates%20to%20true."));
 smalltalk.bind(smalltalk.ChunkReader.$klass, unescape("doing%3Auntil%3A"), "doing_until_", function ChunkReader_class__doing_until_(aBlock,terminationBlock){
 const self = this; return (function ChunkReader_class__($1$){
 $1$.actionBlock_(aBlock);
